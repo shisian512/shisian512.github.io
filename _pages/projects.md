@@ -3,7 +3,6 @@ permalink: /projects/
 title: "Projects"
 ---
 
-# Projects 🚧  
 *Some are polished. Some are still duct-taped. All are mine.*
 
 ---
