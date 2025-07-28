@@ -11,7 +11,7 @@ title: "Projects"
 ## 🛠️ End-to-End Logistic Regression MLOps Pipeline  
 **Role**: ML Engineer (Personal Project)  
 **Duration**: Started July 2025 — still ongoing  
-**URL**: [GitHub – mlops](https://github.com/shisian/mlops)
+**URL**: [GitHub – mlops](https://github.com/shisian512/mlops)
 
 Built from scratch (yes, with pain and glory) — a full MLOps regression pipeline focused on the "real-world mess":  
 - CI/CD automation  
