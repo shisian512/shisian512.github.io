@@ -12,8 +12,8 @@ Prefer silence over small talk? Same. But if you've got a project, idea, opportu
 ## 📬 Ways to reach me:
 
 - 🐙 GitHub: [@shisian512](https://github.com/shisian512)  
-- 💼 LinkedIn: [shisian001](https://www.linkedin.com/in/tan-shi-sian)  
-- ✉️ Email: [shisian001@gmail.com](mailto:shisian001@gmail.com)
+- 💼 LinkedIn: [tan-shi-sian](https://www.linkedin.com/in/tan-shi-sian)  
+- ✉️ Email: [shisian001@gmail.com](shisian001@gmail.com)
 
 ---
 
