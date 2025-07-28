@@ -5,6 +5,7 @@ categories:
   - Blog
 tags:
   - Work Experience
+read_time: 4
 ---
 
 📢 A Year of Transformative Impact: Three Pillars of Growth at Intel
