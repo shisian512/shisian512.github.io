@@ -4,10 +4,6 @@ excerpt_separator: "<!--more-->"
 categories:
   - Blog
 tags:
-  - AI
-  - LLM
-  - MLOps
-  - Career Growth
   - Work Experience
 ---
 
