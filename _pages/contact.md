@@ -5,31 +5,34 @@ title: "Contact"
 
 # Get in Touch 📡
 
-Prefer silence over small talk? Same. But if you've got a project, idea, opportunity — or just a really good meme — feel free to reach out.
+Prefer focused conversation over small talk? Same. But if you've got a cool project, collaboration idea, professional opportunity — or just a high-quality meme — I’d love to hear from you.
 
 ---
 
-## 📬 Ways to reach me:
+## 📬 Connect with Me
 
 - 🐙 GitHub: [@shisian512](https://github.com/shisian512)  
 - 💼 LinkedIn: [tan-shi-sian](https://www.linkedin.com/in/tan-shi-sian)  
-- ✉️ Email: [shisian001@gmail.com](shisian001@gmail.com)
+- 🐦 Twitter / X: [@ShiShisian001](https://x.com/ShiShisian001)  
+- ✉️ Email: [shisian001@gmail.com](mailto:shisian001@gmail.com)
 
 ---
 
-## ⚠️ What *not* to send:
-- Spam  
-- MLM offers  
-- Anything with Comic Sans  
-- “Can you hack my friend's Facebook?” (No.)
+## ⚠️ Kindly *Do Not* Send:
+
+- Spam or generic pitches  
+- MLM schemes  
+- Requests to "hack your friend’s Facebook" (seriously?)  
+- Anything written in Comic Sans 😬
 
 ---
 
-## 💡 Bonus points if:
-- Your message includes an AI pun  
-- You spotted a typo and told me  
-- You found a bug before I did
+## 💡 Bonus Points If:
+
+- Your message includes a clever AI pun 🤖  
+- You spotted a typo and told me (I’ll owe you a coffee)  
+- You found a bug before I did (double karma)
 
 ---
 
-*This page accepts memes, honest feedback, and high-bandwidth conversations.*
+*This page welcomes honest feedback, nerdy jokes, memes with context, and conversations that go beyond surface-level.*

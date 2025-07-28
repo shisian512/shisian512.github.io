@@ -1,27 +1,58 @@
-# Minimal Mistakes remote theme starter
+# 👋 Shi Sian Tan — Machine Learning Engineer
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+Welcome to my portfolio site, powered by Jekyll and deployed with GitHub Pages.  
+This site showcases my work in:
 
-Contains basic configuration to get you a site with:
+- 🧠 Machine Learning & Deep Learning
+- ⚙️ Scalable MLOps Systems
+- 🧰 LLM Infrastructure & Generative AI
+- ☁️ Cloud-native AI Solutions
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+Visit the live site 👉 [shisian512.github.io](https://shisian512.github.io)
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+## 🚀 Projects Featured
+
+- **[🛠️ Logistic Regression MLOps Pipeline](https://github.com/shisian512/mlops)**  
+  End-to-end pipeline from data to deployment, built with MLflow, DVC, and Kubernetes.  
+  CI/CD, drift detection, and chaos engineering included.  
+  *(Personal project, ongoing since July 2025)*
+
+- **📚 Curriculum LLM Platform**  
+  A full-stack modular RAG system with Payload CMS + FastAPI backend + Next.js frontend.  
+  Built for edge inference on Intel XPUs with multi-env Docker and GitHub Actions.  
+  *(Feb–Jul 2025, internal project – no public repo)*
+
+- **[🧠 Enterprise GenAI Platform (Intel OPEA)](https://github.com/opea-project/GenAIExamples)**  
+  Containerized GenAI inferencing on Intel XPU: Docker Compose, systemd migration, PoC demos.  
+  Reduced developer friction, optimized inferencing workflows.  
+  *(Nov 2024 – Jan 2025)*
+
+- **[🔍 AI Workload Validation (Intel WSF)](https://github.com/intel/workload-services-framework)**  
+  Validated AI workloads on Intel Xeon, wrote test cases, triaged bugs with JIRA.  
+  Focused on platform-level edge case coverage and stability.  
+  *(Jul 2024 – Oct 2025)*
+
+- **[🎨 Deep Learning Image Colorization FYP](https://www.linkedin.com/in/tan-shi-sian)**  
+  Built a cGAN model to colorize grayscale images.  
+  Trained on paired datasets, evaluated perceptual quality.  
+  *(Oct 2022 – Jul 2023)*
 
 ---
 
-## Troubleshooting
+✳ Want more details? See the full [Projects Page →](https://shisian512.github.io/projects/)
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+## 🔧 Built With
+- Jekyll + Minimal Mistakes Theme
+- GitHub Pages for hosting
+- Markdown for content
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+---
+
+## 📬 Contact
+- [LinkedIn](https://www.linkedin.com/in/tan-shi-sian)
+- [GitHub](https://github.com/shisian512)
+- [Twitter (X)](https://x.com/ShiShisian001)
+
+---
+
+© 2025 Shi Sian Tan.
