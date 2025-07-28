@@ -28,7 +28,7 @@ analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-J4PMZN0ESC"
-    
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
@@ -76,13 +76,13 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/tan-shi-sian"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+    - label: "X"
+      icon: "fab fa-fw fa-x-twitter"
       url: "https://x.com/ShiShisian001"
 
 footer:
   links:
-    - label: "X (Twitter)"
+    - label: "X"
       icon: "fab fa-fw fa-x-twitter"
       url: "https://x.com/ShiShisian001"
     - label: "GitHub"
