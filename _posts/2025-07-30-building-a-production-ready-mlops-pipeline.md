@@ -13,8 +13,6 @@ tags:
   - CI/CD
 ---
 
-# 🚀 Building a Production-Ready MLOps Pipeline: From Data to Deployment
-
 Over the past few weeks, I've been building a full-stack, production-oriented MLOps pipeline tailored for regression tasks. This is not just an academic exercise — my goal is to design and implement an end-to-end system that mirrors what real-world ML deployments demand: modularity, automation, reproducibility, and observability.
 
 While the project is still a work in progress, it's becoming a valuable learning ground and a personal benchmark in my MLOps journey.

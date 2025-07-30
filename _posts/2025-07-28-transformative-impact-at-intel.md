@@ -5,12 +5,7 @@ categories:
   - Blog
 tags:
   - Work Experience
-read_time: 4
 ---
-
-📢 A Year of Transformative Impact: Three Pillars of Growth at Intel
-
-<!--more-->
 
 Over the past 12 months at Intel, I've had the privilege of contributing to three major AI-related initiatives, each significantly shaping my journey through real-world infrastructure, full-stack delivery, and deep technical challenges.
 
