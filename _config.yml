@@ -28,7 +28,6 @@ analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-J4PMZN0ESC"
-show_reading_time: false
 
 # Build settings
 markdown: kramdown
@@ -101,7 +100,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true
       share: true
       related: true
