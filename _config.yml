@@ -63,7 +63,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Shi Sian Tan"
+  name   : "Shi Sian Tan (Nick)"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Quietly building intelligent systems so they can speak louder than I do."
   links:
