@@ -1,8 +1,9 @@
 ---
 title: "A Year of Transformative Impact: Three Pillars of Growth"
-excerpt_separator: "<!--more-->"
+
 categories:
   - Blog
+  
 tags:
   - Work Experience
 ---

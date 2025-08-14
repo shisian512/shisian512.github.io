@@ -1,8 +1,9 @@
 ---
-title: "From the options, "From Roadmap to Reality: A Look at My MLOps Project's Key Learnings"
+title: "From the options, From Roadmap to Reality: A Look at My MLOps Project's Key Learnings"
 
 categories:
   - Blog
+  
 tags:
   - MLOps
   - Machine Learning
