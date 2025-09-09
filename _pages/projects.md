@@ -3,82 +3,118 @@ permalink: /projects/
 title: "Projects"
 ---
 
-*Some are polished. Some are still duct-taped. All are mine.*
+*Selected projects showcasing my work in industry, independent development, and research.*
 
 ---
 
-## 🛠️ End-to-End Logistic Regression MLOps Pipeline  
-**Role**: ML Engineer (Personal Project)  
-**Duration**: Started July 2025 — still ongoing  
-**URL**: [GitHub – mlops](https://github.com/shisian512/mlops)
+# Professional Projects
 
-Built from scratch (yes, with pain and glory) — a full MLOps regression pipeline focused on the "real-world mess":  
-- CI/CD automation  
-- Experiment tracking with MLflow  
-- Data & model versioning via DVC  
-- Drift detection  
-- Cloud-native deployment with Kubernetes  
-
-Currently adding more chaos (Airflow, monitoring, maybe a robot arm). Trying to simulate production without actually breaking production.
-
----
-
-## 📚 Curriculum LLM Platform  
-**Role**: Core Developer (Collaborated with Project Owner)  
+### University Curriculum Enabling Tool — Intel
+**Role**: Core Developer (Collaboration)  
 **Duration**: Feb 2025 – Jul 2025  
+**Repo**: [GitHub – University-Curriculum](https://github.com/intel/university-curriculum-enabling-tool)
 
-Also built from scratch — a lightweight content delivery platform with:  
-- Payload CMS (Node.js), Next.js frontend  
-- Python FastAPI backend  
-- Multi-env Docker setup (local/dev/staging) with GitHub Actions  
-- Modular RAG pipeline (because static content is boring)
-
-Designed for edge inference on Intel XPU devices — think "LLM-on-the-go" kind of vibe.
-
-⚠️ Internal tool, so no public repo. But yes, it *does* work and didn’t explode.
+- Developed lightweight delivery platform with Next.js, FastAPI, and Payload CMS  
+- Designed modular RAG pipeline for dynamic content delivery  
+- Deployed multi-env Docker setup with GitHub Actions  
+- Optimized for Intel XPU devices (edge inference)  
 
 ---
 
-## 🧠 Enterprise GenAI Platform (Intel OPEA)  
+### Enterprise GenAI Platform - Intel OPEA 
 **Role**: Core Developer (under Tech Lead Direction)  
 **Duration**: Nov 2024 – Jan 2025  
-**URL**: [GitHub – GenAIExamples](https://github.com/opea-project/GenAIExamples)
+**Repo**: [GitHub – GenAIExamples](https://github.com/opea-project)
 
-Optimized containerized GenAI inferencing on Intel iGPU/dGPU (XPU):  
-- Debugged docker container hell  
-- Migrated workflows from `systemd` to `Docker Compose`  
-- Reduced setup friction across teams  
-- Built internal PoC demos to show off inferencing
+- Optimized containerized GenAI inferencing on Intel iGPU/dGPU  
+- Migrated workflows from `systemd` → Docker Compose  
+- Reduced setup friction, enabling faster adoption across teams  
+- Delivered internal PoC demos to showcase inferencing capabilities  
 
 ---
 
-## 🔍 AI Workload Validation (Intel WSF)  
-**Role**: Validation Support Engineer  
+### Workload Services Framework - Intel WSF
+**Role**: Validation Engineer  
 **Duration**: Jul 2024 – Oct 2025  
-**URL**: [GitHub – Workload Services Framework](https://github.com/intel/workload-services-framework)
+**Repo**: [GitHub – Workload Services Framework](https://github.com/intel/workload-services-framework)
 
-Worked on validation support for AI workloads on Intel Xeon platforms:  
-- Wrote and ran test cases  
-- Helped triage bugs using JIRA (my best frenemy)  
-- Helped stabilize and cover more edge cases in platform testing
-
-Learned that testing is 30% logic, 70% caffeine.
+- Supported validation of AI workloads on Intel Xeon platforms  
+- Designed and executed test cases, triaged bugs with JIRA  
+- Helped improve platform stability and coverage of edge cases
 
 ---
 
-## 🎨 Final Year Project – Colorizing Grayscale Images with Deep Learning  
+# Independent & Personal Projects
+
+### End-to-End Regression MLOps Pipeline  
+**Role**: ML Engineer
+**Duration**: Jul 2025 — Present
+**Repo**: [GitHub – mlops](https://github.com/shisian512/mlops)
+**Tech**: Docker, Kubernetes, Machine Leaning, MLflow, Github Action, Python, FastAPI, Restful API, scikit-learn, Prometheus, Grafana, Minio, Postgres, DVC, more
+
+- Full ML lifecycle pipeline for regression tasks: data processing, training, CI/CD, deployment, monitoring.  
+- Experiment tracking with MLflow, model/data versioning with DVC, and automated retraining workflow.  
+- Deployed as containerized services (Docker, Kubernetes); integrated observability (Prometheus / Grafana).  
+- Result: measurable deployment lifecycle improvements and reproducible experiments for production-like testing.
+
+---
+
+### AI-Powered Password Manager  
+**Repo**: [GitHub](https://github.com/shisian512/password-manager-AI)
+**Tech**: Python, Machine Learning, scikit-learn, cryptography, database, salt and hash
+
+- Integrated AI-based strength evaluation into a desktop password manager  
+- Used XGBoost + TF-IDF to assess and suggest password improvements  
+- Built with Tkinter GUI for user interaction  
+
+
+
+### Cost-of-Living ML Dashboard  
+**Repo**: [GitHub](https://github.com/shisian512/malaysia-cost-living-ml-dashboard)
+**Tech**: Tableau, Python ETL
+
+- Designed ETL pipeline with data cleaning and feature engineering  
+- Built forecasting models for global cost-of-living trends  
+- Published interactive Tableau dashboard for visualization and insights  
+
+---
+
+# Academic & Research Projects
+
+### Final Year Project – Colorizing Grayscale Images with Deep Learning  
 **Role**: Researcher  
 **Duration**: Oct 2022 – Jul 2023  
-**More info**: [LinkedIn Project](https://www.linkedin.com/in/tan-shi-sian)
+**Tech**: Deep Learning, Keras, Tensorflow, c-GAN, CNN, Auto Encoder, U-Net
 
-Built a conditional GAN model ("Colour Stack cGAN") to colorize grayscale images:  
-- Literature review + model architecture from scratch  
-- Trained using paired datasets (gray ↔ color)  
-- Evaluated perceptual quality and accuracy  
-- Use cases: restoring old photos, automatic media colorization, digital nostalgia
-
-Presented at academic symposiums, and no one fell asleep — a win.
+- Proposed and implemented "Colour Stack cGAN" architecture  
+- Trained and evaluated model on paired grayscale ↔ color datasets  
+- Explored applications in image restoration and media colorization  
+- Presented findings at academic symposium 
 
 ---
 
-✳ *This page will self-update whenever I break/ship something cool.*
+### Bank Building Classification System  
+**Role**: Team Lead 
+**Tech**: ML pipeline,OpenCV, PCA, SVM, scikit-learn, numpy, pandas, seaborn sns, more
+
+- Led a team to build image classification system for identifying bank buildings from online images  
+- Applied PCA for dimensionality reduction and trained SVM classifier  
+
+---
+
+### Pattern Recognition – Multi-Label Classification  
+**Role**: Team Lead 
+**Tech**: ML pipeline, OpenCV, PCA, SVM, scikit-learn, numpy, pandas, seaborn sns, more
+
+- Preprocessed large facial image dataset  
+- Applied PCA-based dimensionality reduction  
+- Built ML pipelines for gender, emotion, age, and nationality classification  
+
+---
+
+# Notes
+
+- Each entry above links to the most relevant public repo when available. For internal/closed-source work I can provide summaries, architecture diagrams, or code excerpts on request.  
+- If you want compact, CV-style one-line summaries of these projects (for LinkedIn or an emailed portfolio), tell me which items to shorten and I’ll produce a condensed version.
+
+*Last updated: Sep 2025*
