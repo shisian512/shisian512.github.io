@@ -19,7 +19,7 @@ description: >-
   Portfolio site of Shi Sian Tan, a Machine Learning Engineer focused on 
   building scalable MLOps systems, LLM infrastructure, and intelligent solutions.
 github_username: shisian512
-minimal_mistakes_skin: light
+minimal_mistakes_skin: dark
 search: true
 url: "https://shisian512.github.io"
 baseurl: ""
