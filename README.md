@@ -10,8 +10,6 @@ This site highlights my work in:
 
 🔗 Live site: [shisian512.github.io](https://shisian512.github.io)
 
----
-
 ## 🚀 Featured Projects
 
 - **[🛠️ End-to-End MLOps Pipeline](https://github.com/shisian512/mlops)**  
@@ -39,11 +37,7 @@ This site highlights my work in:
   Evaluated results on perceptual quality and presented at academic symposium.  
   *Oct 2022 – Jul 2023*
 
----
-
 ✳ Explore more details on the full [Projects Page →](https://shisian512.github.io/projects/)
-
----
 
 ## 🔧 Tech Stack
 
@@ -52,13 +46,9 @@ This site highlights my work in:
 - **ML/DL**: scikit-learn, TensorFlow, PyTorch  
 - **Visualization**: Tableau, Matplotlib, Seaborn  
 
----
-
 ## 📬 Connect
 
 - [LinkedIn](https://www.linkedin.com/in/tan-shi-sian)  
 - [GitHub](https://github.com/shisian512)  
-
----
 
 © 2025 Shi Sian Tan
