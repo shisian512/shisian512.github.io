@@ -19,8 +19,6 @@ title: "Projects"
 - Deployed multi-env Docker setup with GitHub Actions  
 - Optimized for Intel XPU devices (edge inference)  
 
----
-
 ### Enterprise GenAI Platform - Intel OPEA 
 **Role**: Developer (under Tech Lead Direction)  
 **Duration**: Nov 2024 – Jan 2025  
@@ -31,8 +29,6 @@ title: "Projects"
 - Reduced setup friction, enabling faster adoption across teams  
 - Delivered internal PoC demos to showcase inferencing capabilities  
 
----
-
 ### Workload Services Framework - Intel WSF
 **Role**: Validation Engineer  
 **Duration**: Jul 2024 – Oct 2025  
@@ -41,8 +37,6 @@ title: "Projects"
 - Supported validation of AI workloads on Intel Xeon platforms  
 - Designed and executed test cases, triaged bugs with JIRA  
 - Helped improve platform stability and coverage of edge cases
-
----
 
 # Independent & Personal Projects
 
@@ -57,8 +51,6 @@ title: "Projects"
 - Deployed as containerized services (Docker, Kubernetes); integrated observability (Prometheus / Grafana).  
 - Result: measurable deployment lifecycle improvements and reproducible experiments for production-like testing.
 
----
-
 ### AI-Powered Password Manager  
 **Repo**: [GitHub](https://github.com/shisian512/password-manager-AI)
 **Tech**: Python, scikit-learn, Cryptography, SQL (hashed + salted storage)
@@ -67,8 +59,6 @@ title: "Projects"
 - Used XGBoost + TF-IDF to assess and suggest password improvements  
 - Built with Tkinter GUI for user interaction  
 
-
-
 ### Cost-of-Living ML Dashboard  
 **Repo**: [GitHub](https://github.com/shisian512/malaysia-cost-living-ml-dashboard)
 **Tech**: Python (ETL), Tableau
@@ -76,8 +66,6 @@ title: "Projects"
 - Designed ETL pipeline with data cleaning and feature engineering  
 - Built forecasting models for global cost-of-living trends  
 - Published interactive Tableau dashboard for visualization and insights  
-
----
 
 # Academic & Research Projects
 
@@ -91,16 +79,12 @@ title: "Projects"
 - Explored applications in image restoration and media colorization  
 - Presented findings at academic symposium 
 
----
-
 ### Bank Building Classification System  
 **Role**: ML Engineer
 **Tech**: ML pipeline, OpenCV, PCA, SVM, scikit-learn, Numpy, Pandas, Seaborn, more
 
 - Led a team to build an image classification system for identifying bank buildings from online images  
 - Applied PCA for dimensionality reduction and trained SVM classifier  
-
----
 
 ### Pattern Recognition – Multi-Label Classification  
 **Role**: ML Engineer 
@@ -109,8 +93,6 @@ title: "Projects"
 - Preprocessed large facial image dataset  
 - Applied PCA-based dimensionality reduction  
 - Built ML pipelines for gender, emotion, age, and nationality classification  
-
----
 
 # Notes
 
