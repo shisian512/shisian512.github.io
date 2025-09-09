@@ -3,49 +3,54 @@ permalink: /about/
 title: "About"
 ---
 
-# Hello there 👋
+# About Me
 
-I'm **Shi Sian Tan**, a machine learning engineer with too many tabs open — both in my browser and in my brain.
+My name is **Tan Shi Sian (Nick)**. I graduated with **First Class Honours in Computer Science (Software Engineering)** from Multimedia University, Malaysia.  
+I have hands-on experience in **AI engineering, MLOps, and backend systems**, with professional exposure at Intel Corporation and Infineon Technologies.
 
-I build:
-- systems that (usually) don’t crash at 3AM  
-- models that try to understand the world better than I do  
-- pipelines that feel more stable than my sleep schedule  
+At **Intel**, I worked as an AI Engineer where I built scalable backend platforms, engineered MLOps pipelines, and developed production-ready AI/ML solutions — from LLM applications to GenAI microservices.  
+At **Infineon**, I interned as a Business Intelligence Developer, where I built automated ETL pipelines and Tableau dashboards that improved data availability and streamlined operational reporting.
 
----
-
-## 🤖 What I do (besides Googling error messages)
-
-- Train models, deploy them, then regret not versioning them properly  
-- Automate everything I’m too lazy to repeat twice  
-- Talk to ChatGPT like it’s a moody roommate  
-- Solve problems nobody asked for, but someone someday might thank me for
+My long-term career goal is to continue advancing in **AI/MLOps engineering**, building reliable, scalable, and impactful AI systems that bridge research and real-world applications.
 
 ---
 
-## 🧠 Interests
-- Using AI to solve actual problems (not just generate cat pictures — unless it’s a *really* cool cat)  
-- Making workflows smoother, smarter, and more dramatic than necessary  
-- Collecting obscure ML tools I may or may not ever use
+## What I Do
+
+- **AI/ML Engineering** → Model development, computer vision, NLP, predictive analytics  
+- **MLOps & Systems** → CI/CD pipelines, MLflow, Docker/Kubernetes, deployment automation, monitoring  
+- **Backend Engineering** → FastAPI, Flask, SQL (Postgres/MySQL), scalable services  
+- **Data Insights** → ETL, feature engineering, dashboards, data visualization  
 
 ---
 
-## ☕ Behind the scenes
-- I like clean code, quiet environments, and chaotic ideas  
-- I like coffee, peanut butter, and chocolate
-- Most of my best thoughts happen **just before sleep**, which is very inconvenient for everyone involved
+## Skills at a Glance
+
+- **Programming**: Python (advanced), C++, SQL, PySpark  
+- **Frameworks**: PyTorch, TensorFlow, scikit-learn, OpenCV  
+- **DevOps/MLOps**: Docker, Kubernetes, Ansible, Terraform, GitHub Actions, Jenkins, ArgoCD  
+- **Cloud**: AWS, Azure  
+- **Visualization**: Tableau, Pandas, Matplotlib  
 
 ---
 
-## 🛸 Contact
+## Beyond Work
 
-You won’t find me at parties, but you can find me here:
-- [Projects](/projects/)
-- [Contact](/contact/) (No spam. No small talk. Just signals.)
+Outside of engineering, I enjoy activities that balance creativity and logic:  
 
-Or send a meme. That works too.  
-(*Bonus points if it's AI-related and mildly cursed.*)
+- Building with **Lego** and designing in **Minecraft**  
+- Exploring **Android customization** and the open-source ecosystem  
+- Gaming and experimenting with design as a way to recharge  
 
 ---
 
-🧪 *This site was built by me, powered by Tailwind CSS, caffeine, and mild existential dread.*
+## Career Philosophy
+
+I believe in **building AI systems that matter** — not just proofs-of-concept, but solutions that improve workflows, reduce complexity, and deliver measurable results.  
+My approach combines technical depth with a focus on practicality, always aiming to bring ideas into production where they can make a difference.
+
+---
+
+For professional opportunities, collaborations, or technical discussions, you can connect with me via:  
+- [Projects](/projects/)  
+- [Contact](/contact/)  
