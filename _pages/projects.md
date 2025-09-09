@@ -10,7 +10,7 @@ title: "Projects"
 # Professional Projects
 
 ### University Curriculum Enabling Tool — Intel
-**Role**: Core Developer (Collaboration)  
+**Role**: Developer (Collaboration)  
 **Duration**: Feb 2025 – Jul 2025  
 **Repo**: [GitHub – University-Curriculum](https://github.com/intel/university-curriculum-enabling-tool)
 
@@ -22,7 +22,7 @@ title: "Projects"
 ---
 
 ### Enterprise GenAI Platform - Intel OPEA 
-**Role**: Core Developer (under Tech Lead Direction)  
+**Role**: Developer (under Tech Lead Direction)  
 **Duration**: Nov 2024 – Jan 2025  
 **Repo**: [GitHub – GenAIExamples](https://github.com/opea-project)
 
@@ -50,7 +50,7 @@ title: "Projects"
 **Role**: ML Engineer
 **Duration**: Jul 2025 — Present
 **Repo**: [GitHub – mlops](https://github.com/shisian512/mlops)
-**Tech**: Docker, Kubernetes, Machine Leaning, MLflow, Github Action, Python, FastAPI, Restful API, scikit-learn, Prometheus, Grafana, Minio, Postgres, DVC, more
+**Tech**: Docker, Kubernetes, Machine Learning, MLflow, Github Actions, Python, FastAPI, RESTful API, scikit-learn, Prometheus, Grafana, Minio, Postgres, DVC, more
 
 - Full ML lifecycle pipeline for regression tasks: data processing, training, CI/CD, deployment, monitoring.  
 - Experiment tracking with MLflow, model/data versioning with DVC, and automated retraining workflow.  
@@ -61,7 +61,7 @@ title: "Projects"
 
 ### AI-Powered Password Manager  
 **Repo**: [GitHub](https://github.com/shisian512/password-manager-AI)
-**Tech**: Python, Machine Learning, scikit-learn, cryptography, database, salt and hash
+**Tech**: Python, scikit-learn, Cryptography, SQL (hashed + salted storage)
 
 - Integrated AI-based strength evaluation into a desktop password manager  
 - Used XGBoost + TF-IDF to assess and suggest password improvements  
@@ -71,7 +71,7 @@ title: "Projects"
 
 ### Cost-of-Living ML Dashboard  
 **Repo**: [GitHub](https://github.com/shisian512/malaysia-cost-living-ml-dashboard)
-**Tech**: Tableau, Python ETL
+**Tech**: Python (ETL), Tableau
 
 - Designed ETL pipeline with data cleaning and feature engineering  
 - Built forecasting models for global cost-of-living trends  
@@ -94,16 +94,16 @@ title: "Projects"
 ---
 
 ### Bank Building Classification System  
-**Role**: Team Lead 
-**Tech**: ML pipeline,OpenCV, PCA, SVM, scikit-learn, numpy, pandas, seaborn sns, more
+**Role**: ML Engineer
+**Tech**: ML pipeline, OpenCV, PCA, SVM, scikit-learn, Numpy, Pandas, Seaborn, more
 
-- Led a team to build image classification system for identifying bank buildings from online images  
+- Led a team to build an image classification system for identifying bank buildings from online images  
 - Applied PCA for dimensionality reduction and trained SVM classifier  
 
 ---
 
 ### Pattern Recognition – Multi-Label Classification  
-**Role**: Team Lead 
+**Role**: ML Engineer 
 **Tech**: ML pipeline, OpenCV, PCA, SVM, scikit-learn, numpy, pandas, seaborn sns, more
 
 - Preprocessed large facial image dataset  
