@@ -29,7 +29,7 @@ This site highlights my work in:
   Migrated workflows from `systemd` → Docker Compose and delivered PoC demos.  
   *Nov 2024 – Jan 2025*
 
-- **[🔍 AI Workload Services Framework (Intel WSF)](https://github.com/intel/workload-services-framework)**  
+- **[🔍 Workload Services Framework (Intel WSF)](https://github.com/intel/workload-services-framework)**  
   Validated AI workloads on Intel Xeon platforms, wrote test cases, and triaged bugs with JIRA.  
   Improved platform stability and edge case coverage.  
   *Jul 2024 – Oct 2025*
