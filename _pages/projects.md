@@ -38,6 +38,8 @@ title: "Projects"
 - Designed and executed test cases, triaged bugs with JIRA  
 - Helped improve platform stability and coverage of edge cases
 
+---
+
 # Independent & Personal Projects
 
 ### End-to-End Regression MLOps Pipeline  
@@ -67,6 +69,8 @@ title: "Projects"
 - Built forecasting models for global cost-of-living trends  
 - Published interactive Tableau dashboard for visualization and insights  
 
+---
+
 # Academic & Research Projects
 
 ### Final Year Project – Colorizing Grayscale Images with Deep Learning  
@@ -93,6 +97,8 @@ title: "Projects"
 - Preprocessed large facial image dataset  
 - Applied PCA-based dimensionality reduction  
 - Built ML pipelines for gender, emotion, age, and nationality classification  
+
+---
 
 # Notes
 
