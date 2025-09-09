@@ -3,12 +3,9 @@ permalink: /contact/
 title: "Contact"
 ---
 
-# Contact
+I welcome professional connections, collaborations, and opportunities in the fields of **AI, MLOps, and software engineering**. 
 
-I welcome professional connections, collaborations, and opportunities in the fields of **AI, MLOps, and software engineering**.  
 If you are seeking someone with proven experience in designing, building, and deploying production-grade AI/ML systems, please feel free to reach out.
-
----
 
 ## Connect with Me
 

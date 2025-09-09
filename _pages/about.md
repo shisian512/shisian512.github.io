@@ -3,8 +3,6 @@ permalink: /about/
 title: "About"
 ---
 
-# About Me
-
 My name is **Tan Shi Sian (Nick)**. I graduated with **First Class Honours in Computer Science (Software Engineering)** from Multimedia University, Malaysia.  
 I have hands-on experience in **AI engineering, MLOps, and backend systems**, with professional exposure at Intel Corporation and Infineon Technologies.
 
