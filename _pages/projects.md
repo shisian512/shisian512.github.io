@@ -43,9 +43,9 @@ title: "Projects"
 # Independent & Personal Projects
 
 ### End-to-End Regression MLOps Pipeline  
-**Role**: ML Engineer
-**Duration**: Jul 2025 — Present
-**Repo**: [GitHub – mlops](https://github.com/shisian512/mlops)
+**Role**: ML Engineer  
+**Duration**: Jul 2025 — Present  
+**Repo**: [GitHub – mlops](https://github.com/shisian512/mlops)  
 **Tech**: Docker, Kubernetes, Machine Learning, MLflow, Github Actions, Python, FastAPI, RESTful API, scikit-learn, Prometheus, Grafana, Minio, Postgres, DVC, more
 
 - Full ML lifecycle pipeline for regression tasks: data processing, training, CI/CD, deployment, monitoring.  
