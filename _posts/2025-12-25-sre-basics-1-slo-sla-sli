@@ -1,0 +1,194 @@
+---
+title: "SRE Fundamentals (Part 1): Understanding SLIs, SLOs, and SLAs"
+date: 2025-12-25
+categories:
+  - Blog
+tags:
+  - SLI
+  - SLO
+  - SLA
+  - Monitoring
+  - Observability
+  - SRE
+author: "Tan Shi Sian"
+---
+
+> Summary: I’ve been learning SRE fundamentals by reading Google’s SRE materials and related articles. This post is Part 1 of a short series where I arrange what I’ve learned so far—starting with SLIs, SLOs, and SLAs—and explain how these concepts translate into real operational and business decisions.
+
+## Series Overview
+
+- **Part 1**: SLIs, SLOs, and SLAs (this post)  
+- **Part 2**: Error Budgets, Alerts, and Incident Response  
+- **Part 3**: Applying SRE Thinking in Small Teams and Startups  
+
+---
+
+## 1. Introduction
+
+Recently, I started intentionally learning more about Site Reliability Engineering (SRE). While reading Google’s SRE articles and documentation, I noticed something interesting: the ideas are conceptually simple, but easy to misunderstand if you only skim the definitions.
+
+Terms like SLIs, SLOs, and SLAs are everywhere in reliability discussions, yet many teams either don’t use them at all—or use them in name only. I’m writing this series as a way to share my own understanding and share what I’ve learned so far, from the perspective of an engineer working in real systems, not a large SRE org.
+
+This first part focuses on the foundations. If these concepts are unclear, everything built on top of them—alerts, error budgets, incident policies—will also be fuzzy.
+
+---
+
+## 2. SLI / SLO / SLA: Definitions and Context (Based on Google SRE)
+
+- **Service-Level Indicator (SLI)**  
+  An SLI is a measurable signal that represents how users experience a service. Examples include request success rate, latency percentiles, or probe success rate. A good SLI is automatically measurable and closely tied to real user impact.
+
+- **Service-Level Objective (SLO)**  
+  An SLO is a target value for an SLI over a specific time window (for example, 99.9% availability over 30 days). SLOs are internal goals used to guide engineering decisions and reliability trade-offs.
+
+- **Service-Level Agreement (SLA)**  
+  An SLA is a formal commitment made to customers, often with financial penalties if it is breached. SLAs are typically looser than internal SLOs and require stricter auditing and reporting.
+
+A useful mental model:
+- **SLI** → what you measure  
+- **SLO** → what you aim for  
+- **SLA** → what you promise externally  
+
+---
+
+## 3. How to Choose Meaningful SLIs
+
+Not every metric should be an SLI. Choosing the wrong SLIs leads to dashboards that look impressive but don’t help during incidents.
+
+**Guidelines for selecting SLIs:**
+1. **Reflect real user experience**  
+   Measure what users actually feel (failed requests, slow responses, unavailable pages).
+2. **Keep the set small**  
+   One service usually needs only 1–3 SLIs.
+3. **Make them measurable and reproducible**  
+   Especially important if the metric is tied to an SLA.
+
+**Practical SLI examples:**
+- `availability_probe_success_rate` — synthetic checks for core endpoints  
+- `http_success_rate` — successful (2xx) requests divided by total requests  
+- `api_p95_latency_ms` — p95 latency for a critical API path  
+
+---
+
+## 4. Converting Business Goals into SLOs (Real-World Example)
+
+This is where SRE stops being abstract and starts affecting real decisions.
+
+### Example: Cloud provider availability targets (AWS-style)
+
+Many cloud providers publicly commit to availability targets such as 99.9% or 99.99%. Let’s break down what these numbers actually mean.
+
+### Case 1: 99.9% availability over 30 days
+- Total minutes in 30 days:  
+  30 × 24 × 60 = **43,200 minutes**
+- Allowed downtime (0.1%):  
+  **43.2 minutes per month**
+
+If downtime exceeds this:
+- The SLA is breached  
+- Customers may receive service credits  
+- The provider absorbs real financial cost  
+
+### Case 2: 99.99% availability over 30 days
+- Allowed downtime (0.01%):  
+  **4.32 minutes per month**
+
+The jump from 99.9% to 99.99%:
+- Reduces allowed downtime by **10×**
+- Requires faster detection, recovery, and redundancy
+- Increases infrastructure and operational cost significantly
+
+### Internal SLO vs External SLA
+
+A common pattern used by mature teams:
+- **External SLA**: 99.9%  
+- **Internal SLO**: 99.95%
+
+Why?
+- The internal SLO creates a safety buffer.
+- Small internal failures don’t immediately impact customers.
+- That buffer becomes the **error budget**, which will be the focus of Part 2.
+
+### Cost and trade-offs
+
+Higher availability is never free:
+- More replicas and redundancy → higher infra cost  
+- Faster detection → more monitoring and alerts  
+- Faster recovery → higher operational complexity  
+
+SLOs force teams to ask a hard but necessary question:  
+**Is this level of reliability worth the cost for this service and user group?**
+
+---
+
+## 5. SLA: External Commitments vs Internal SLOs
+
+Some practical operational takeaways:
+- Measure SLA-eligible traffic separately (e.g., paid users only).
+- Clearly document exclusions such as maintenance windows.
+- Keep internal SLOs stricter than SLAs to reduce customer-facing risk.
+
+If everything is measured the same way, SLA violations often turn into arguments instead of data-driven discussions.
+
+---
+
+## 6. Implementation Examples: Cloud Monitoring & Log Analysis
+
+**Cloud monitoring (AWS / GCP / Azure):**
+- Uptime checks for critical endpoints  
+- Alerts aligned to SLO thresholds, not raw metrics  
+- Dashboards showing SLI trends and error budget burn  
+
+**Log analysis (ELK / OpenSearch / Cloud logs):**
+- Structured logs with latency and status codes  
+- Rolling-window aggregation for SLI calculation  
+- SLA-specific alerts for high-impact failures  
+
+The key idea: SLIs must be computable automatically and consistently.
+
+---
+
+## 7. Alerts, Error Budgets, and Release Decisions (Preview)
+
+Alerts should exist to protect SLOs, not to fire constantly.
+
+- Alerts map to SLO boundaries  
+- Error budgets guide release velocity  
+- When error budgets are low, risk tolerance should drop  
+
+This topic deserves deeper treatment and will be the focus of **Part 2**.
+
+---
+
+## 8. Practical Checklist and Lessons Learned
+
+**Quick checklist:**
+- [ ] Identify key user journeys  
+- [ ] Define 1–3 SLIs per service  
+- [ ] Agree on SLO targets and windows  
+- [ ] Separate SLA traffic from non-SLA traffic  
+- [ ] Make error budgets visible  
+- [ ] Review periodically  
+
+**Lessons so far:**
+- Reliability discussions improve once numbers are explicit.
+- Error budgets turn subjective debates into objective decisions.
+- SRE principles scale down surprisingly well to small teams.
+
+---
+
+## 9. References
+
+- Google SRE Book: https://landing.google.com/sre/book.html  
+- Prometheus Docs: https://prometheus.io/docs/introduction/overview/  
+- OpenTelemetry: https://opentelemetry.io/
+
+---
+
+## 10. Let’s Connect
+
+I’m still learning, and I’d love to exchange ideas or learn from others’ experiences.
+
+- GitHub: https://github.com/shisian512  
+- LinkedIn: https://www.linkedin.com/in/tan-shi-sian  
+- Email: shisian001@gmail.com
