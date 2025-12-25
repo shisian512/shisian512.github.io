@@ -13,7 +13,7 @@ tags:
 author: "Tan Shi Sian"
 ---
 
-> Summary: I’ve been learning SRE fundamentals by reading Google’s SRE materials and related articles. This post is Part 2 of a short series where I整理 what I’ve learned about error budgets, alerting, and incident response—and how these ideas directly affect release decisions and operational behavior.
+> Summary: I’ve been learning SRE fundamentals by reading Google’s SRE materials and related articles. This post is Part 2 of a short series where I arrage what I’ve learned about error budgets, alerting, and incident response—and how these ideas directly affect release decisions and operational behavior.
 
 ## Series Overview
 
