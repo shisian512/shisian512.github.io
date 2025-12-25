@@ -3,43 +3,45 @@ permalink: /about/
 title: "About"
 ---
 
-My name is **Tan Shi Sian (Nick)**. I graduated with **First Class Honours in Computer Science (Software Engineering)** from Multimedia University, Malaysia.  
-I have hands-on experience in **AI engineering, MLOps, and backend systems**, with professional exposure at Intel Corporation and Infineon Technologies.
+**Shi Sian (Nick) Tan** — He/Him  
+**Site Reliability Engineer @ Infineon** | ex-Intel | AI & MLOps Practitioner  
+Melaka, Malaysia
 
-At **Intel**, I worked as an AI Engineer where I built scalable backend platforms, engineered MLOps pipelines, and developed production-ready AI/ML solutions — from LLM applications to GenAI microservices.
+Former Intel engineer with practical experience building and deploying production-grade AI/ML platforms. I focus on bridging machine learning and reliability engineering to deliver scalable, resilient, and automated systems.
 
-At **Infineon**, I interned as a Business Intelligence Developer, where I built automated ETL pipelines and Tableau dashboards that improved data availability and streamlined operational reporting.
+### Professional summary
+I work across SRE, AI/ML infrastructure, and cloud automation — designing and operating systems that run reliably at scale. My background includes MLOps pipelines, model deployment, observability, and infrastructure automation across AWS, Azure, and GCP.
 
-My long-term career goal is to continue advancing in **AI/MLOps engineering**, building reliable, scalable, and impactful AI systems that bridge research and real-world applications.
+**Recent roles**
+- **Site Reliability Engineer, Infineon Technologies** — Nov 2025 – Present (Batu Berendam, Melaka)  
+- **Software Engineer (Freelance / Personal Projects)** — Jul 2025 – Nov 2025 (Johor Bahru)  
+- **Software Engineer (Intel)** — Jul 2024 – Jun 2025 (Penang)  
+- Earlier: ML research and BI roles (Multimedia University, Infineon internship)
 
-## What I Do
+### Core capabilities
+- **MLOps & Automation:** MLflow, Airflow, DVC, automated retraining & CI/CD  
+- **Cloud & CI/CD:** AWS, Azure, GCP, Terraform, Jenkins, GitHub Actions  
+- **Container & Orchestration:** Docker, Kubernetes, containerized deployment patterns  
+- **SRE & Observability:** Prometheus, Grafana, logging, performance optimisation  
+- **Backend & APIs:** Python, FastAPI, REST services, data pipelines
 
-- **AI/ML Engineering** → Model development, computer vision, NLP, predictive analytics  
-- **MLOps & Systems** → CI/CD pipelines, MLflow, Docker/Kubernetes, deployment automation, monitoring  
-- **Backend Engineering** → FastAPI, Flask, SQL (Postgres/MySQL), scalable services  
-- **Data Insights** → ETL, feature engineering, dashboards, data visualization  
+### Services (available)
+- IT & cloud consulting: architecture, SRE advisories, migration planning  
+- MLOps & deployment: pipeline design, model lifecycle automation  
+- Application engineering: backend systems and API development  
+- Coaching & training: technical mentoring and practical workshops
 
-## Skills at a Glance
+**Pricing / enquiries:** Contact for pricing — project scope determines engagement terms.
 
-- **Programming**: Python (advanced), C++, SQL, PySpark  
-- **Frameworks**: PyTorch, TensorFlow, scikit-learn, OpenCV  
-- **DevOps/MLOps**: Docker, Kubernetes, Ansible, Terraform, GitHub Actions, Jenkins, ArgoCD  
-- **Cloud**: AWS, Azure  
-- **Visualization**: Tableau, Pandas, Matplotlib  
+### Open to work
+Actively open to roles including: Site Reliability Engineer, Cloud Engineer, Software Engineer, DevOps Engineer, Senior Site Reliability Engineer.
 
-## Beyond Work
+### Volunteering (interests)
+Open to volunteer opportunities in: Science & Technology, Education, Environmental Sustainability, Diversity, Equity & Inclusion.
 
-Outside of engineering, I enjoy activities that balance creativity and logic:  
+### Links
+- Blog: https://shisian512.github.io/posts/  
+- GitHub: https://github.com/shisian512  
+- LinkedIn: https://www.linkedin.com/in/tan-shi-sian
 
-- Building with **Lego** and **Minecraft**
-- Exploring **Android customization** and the open-source ecosystem
-- Gaming and experimenting with design as a way to recharge
-
-## Career Philosophy
-
-I believe in **building AI systems that matter** — not just proofs-of-concept, but solutions that improve workflows, reduce complexity, and deliver measurable results.  
-My approach combines technical depth with a focus on practicality, always aiming to bring ideas into production where they can make a difference.
-
-For professional opportunities, collaborations, or technical discussions, you can connect with me via:  
-- [Projects](/projects/)  
-- [Contact](/contact/)  
+If you have a project, collaboration, or volunteering opportunity that fits these areas, feel free to reach out.

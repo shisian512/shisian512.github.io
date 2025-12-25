@@ -9,6 +9,8 @@ title: "Projects"
 
 # Professional Projects
 
+🔗 GitHub: [shisian512](https://github.com/shisian512)
+
 ### University Curriculum Enabling Tool — Intel
 **Role**: Developer (Collaboration)  
 **Duration**: Feb 2025 – Jul 2025  
@@ -44,7 +46,7 @@ title: "Projects"
 
 ### End-to-End Regression MLOps Pipeline  
 **Role**: ML Engineer  
-**Duration**: Jul 2025 — Present  
+**Duration**: Jul 2025 — Oct 2025  
 **Repo**: [GitHub – mlops](https://github.com/shisian512/mlops)  
 **Tech**: Docker, Kubernetes, Machine Learning, MLflow, Github Actions, Python, FastAPI, RESTful API, scikit-learn, Prometheus, Grafana, Minio, Postgres, DVC, more
 
@@ -105,4 +107,4 @@ title: "Projects"
 - Each entry above links to the most relevant public repo when available. For internal/closed-source work I can provide summaries, architecture diagrams, or code excerpts on request.  
 - If you want compact, CV-style one-line summaries of these projects (for LinkedIn or an emailed portfolio), tell me which items to shorten and I’ll produce a condensed version.
 
-*Last updated: Sep 2025*
+*Last updated: Dec 2025*
