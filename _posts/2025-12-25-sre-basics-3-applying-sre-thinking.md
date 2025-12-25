@@ -13,7 +13,7 @@ tags:
 author: "Tan Shi Sian"
 ---
 
-> Summary: I’ve been learning SRE fundamentals and sharing my notes in a series. This final part focuses on how small teams and startups can apply SRE thinking in a practical way, balancing speed, cost, and reliability without over-engineering.
+> Summary: The final part shows how small teams and startups can apply SRE principles effectively, balancing reliability, speed, and cost.
 
 ## Series Overview
 

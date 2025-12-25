@@ -11,7 +11,7 @@ tags:
   - SRE
 ---
 
-Summary: I’ve been learning SRE fundamentals by reading Google’s SRE materials and related articles. This post is Part 1 of a short series where I arrange what I’ve learned so far—starting with SLIs, SLOs, and SLAs—and explain how these concepts translate into real operational and business decisions.
+> Summary: I’m learning SRE fundamentals from Google and sharing what I’ve learned about SLIs, SLOs, and SLAs, with practical examples for real systems.
 
 ## Series Overview
 
