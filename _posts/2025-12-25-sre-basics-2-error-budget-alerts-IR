@@ -1,0 +1,41 @@
+---
+title: "SRE Fundamentals (Part 2): Error Budgets, Alerts, and Incident Response"
+categories:
+  - Blog
+tags:
+  - SLI
+  - SLO
+  - SLA
+  - Monitoring
+  - Observability
+  - SRE
+---
+
+Summary: I’ve been learning SRE fundamentals by reading Google’s SRE materials and related articles. This post is Part 2 of a short series where I arrange what I’ve learned so far—starting with Error Budgets, Alerts, and Incident Response—and explain how these concepts translate into real operational and business decisions.
+
+## Series Overview
+
+- **Part 1**: SLIs, SLOs, and SLAs  
+- **Part 2**: Error Budgets, Alerts, and Incident Response (this post)
+- **Part 3**: Applying SRE Thinking in Small Teams and Startups  
+
+---
+
+## 1. Introduction
+
+
+## 9. References
+
+- Google SRE Book: https://landing.google.com/sre/book.html  
+- Prometheus Docs: https://prometheus.io/docs/introduction/overview/  
+- OpenTelemetry: https://opentelemetry.io/
+
+---
+
+## 10. Let’s Connect
+
+I’m still learning, and I’d love to exchange ideas or learn from others’ experiences.
+
+- GitHub: https://github.com/shisian512  
+- LinkedIn: https://www.linkedin.com/in/tan-shi-sian  
+- Email: shisian001@gmail.com

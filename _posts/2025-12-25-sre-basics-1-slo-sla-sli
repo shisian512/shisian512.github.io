@@ -1,6 +1,5 @@
 ---
 title: "SRE Fundamentals (Part 1): Understanding SLIs, SLOs, and SLAs"
-date: 2025-12-25
 categories:
   - Blog
 tags:
@@ -10,10 +9,9 @@ tags:
   - Monitoring
   - Observability
   - SRE
-author: "Tan Shi Sian"
 ---
 
-> Summary: I’ve been learning SRE fundamentals by reading Google’s SRE materials and related articles. This post is Part 1 of a short series where I arrange what I’ve learned so far—starting with SLIs, SLOs, and SLAs—and explain how these concepts translate into real operational and business decisions.
+Summary: I’ve been learning SRE fundamentals by reading Google’s SRE materials and related articles. This post is Part 1 of a short series where I arrange what I’ve learned so far—starting with SLIs, SLOs, and SLAs—and explain how these concepts translate into real operational and business decisions.
 
 ## Series Overview
 
