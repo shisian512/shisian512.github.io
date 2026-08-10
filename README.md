@@ -1,72 +1,167 @@
-# 👋 Shi Sian Tan — Machine Learning & SRE Engineer
+# 👋 Tan Shi Sian
 
-Welcome to my portfolio! I build **scalable, reliable, and automated systems** that power AI/ML platforms and cloud infrastructure. With experience at Intel and Infineon, I focus on delivering robust solutions across **AI infrastructure, DevOps, and cloud-native systems**.  
+## Site Reliability Engineer | Platform Engineer | AI Infrastructure
 
-I’m also **open to consulting, technical mentoring, and volunteering** to help teams and communities grow in tech.
+Welcome to my portfolio.
 
-🔗 Live site: [shisian512.github.io](https://shisian512.github.io)
+I'm a Site Reliability Engineer specializing in platform operations, cloud-native infrastructure, automation, observability, and AI-enabled systems. My experience spans enterprise-scale production environments, Kubernetes/OpenShift platforms, DevOps automation, and AI infrastructure across Infineon and Intel.
+
+I enjoy building reliable, scalable, and secure systems that help engineering teams deliver software efficiently while maintaining operational excellence.
+
+🔗 Portfolio: https://shisian512.github.io  
+🔗 Projects: https://shisian512.github.io/projects/
+
+---
+
+## 💼 Professional Experience
+
+### Site Reliability Engineer
+**Infineon Technologies** | Nov 2025 – Present
+
+- Productionized an AI-enabled technical documentation platform on OpenShift.
+- Implemented authentication, RBAC, audit logging, and persistent storage for enterprise AI applications.
+- Operate and maintain 50+ Windows Server and virtual-machine environments globally.
+- Support production releases through Azure DevOps pipelines.
+- Investigate incidents using ELK, Kibana, telemetry, and monitoring systems.
+- Manage patching, upgrades, licensing, and operational governance activities.
+
+### Graduate Trainee
+**Intel Corporation** | Jul 2024 – Jun 2025
+
+#### University Curriculum Enabling Tool
+- Co-developed an open-source GenAI education platform using Next.js, FastAPI, and Payload CMS.
+- Designed modular RAG workflows and CI/CD pipelines with Docker and GitHub Actions.
+- Optimized deployments across Intel CPU, GPU, and XPU environments.
+
+#### Open Platform for Enterprise AI (OPEA)
+- Containerized GenAI inference services for Intel hardware platforms.
+- Migrated deployments from systemd-based orchestration to Docker Compose.
+- Delivered repeatable proof-of-concept environments for enterprise AI workloads.
+
+#### Workload Services Framework (WSF)
+- Validated AI and benchmark workloads on Intel Xeon platforms.
+- Reproduced software failures and documented engineering defects.
+- Improved validation coverage through structured testing and analysis.
 
 ---
 
 ## 🚀 Featured Projects
 
-- **[🛠️ End-to-End MLOps Pipeline]**  
-  Designed a full ML lifecycle pipeline with MLflow, DVC, and Kubernetes. Includes CI/CD automation, drift detection, and chaos engineering.  
-  *Jul 2025 – Oct 2025*
+### 🛠 End-to-End Regression MLOps Pipeline
+*Jul 2025 – Oct 2025*
 
-- **[📚 University Curriculum Enabling Tool (Intel)](https://github.com/intel/university-curriculum-enabling-tool)**  
-  Full-stack modular RAG system with Next.js + FastAPI + Payload CMS. Optimized for Intel XPUs with multi-environment Docker + GitHub Actions.  
-  *Feb – Jul 2025*
+- Built a complete machine learning pipeline with MLflow, DVC, Docker, Kubernetes, and GitHub Actions.
+- Implemented experiment tracking, model versioning, and deployment automation.
+- Added Prometheus and Grafana monitoring for operational visibility.
 
-- **[🧠 Enterprise GenAI Platform (Intel OPEA)](https://github.com/opea-project)**  
-  Containerized GenAI inference pipelines on Intel GPUs. Migrated workflows from systemd → Docker Compose, delivered PoC demos.  
-  *Nov 2024 – Jan 2025*
+### 📚 University Curriculum Enabling Tool (Intel)
+https://github.com/intel/university-curriculum-enabling-tool
 
-- **[🔍 Workload Services Framework (Intel WSF)](https://github.com/intel/workload-services-framework)**  
-  Validated AI workloads, structured test cases, and triaged bugs with JIRA. Improved platform reliability and edge-case coverage.  
-  *Jul 2024 – Oct 2025*
+- Full-stack GenAI platform built with Next.js, FastAPI, and Payload CMS.
+- Modular Retrieval-Augmented Generation (RAG) architecture.
+- Automated deployment pipelines using Docker and GitHub Actions.
 
-- **[🎨 Deep Learning Image Colorization (FYP)](https://www.linkedin.com/in/tan-shi-sian)**  
-  Trained a cGAN to colorize grayscale images, evaluated perceptual quality, and presented at academic symposium.  
-  *Oct 2022 – Jul 2023*
+### 🧠 Intel OPEA Platform
+https://github.com/opea-project
 
-✳ Explore more on the [Projects Page →](https://shisian512.github.io/projects/)
+- Containerized enterprise GenAI inference workflows.
+- Developed portable deployment workflows for Intel GPU environments.
+- Delivered enterprise AI proof-of-concept demonstrations.
 
----
+### 🔍 Intel Workload Services Framework
+https://github.com/intel/workload-services-framework
 
-## 🔧 Tech Stack
+- Validated AI and benchmark workloads on Intel Xeon systems.
+- Identified reliability issues and edge cases through structured testing.
+- Collaborated with engineering teams to improve platform stability.
 
-- **Frameworks & Tools:** MLflow, DVC, FastAPI, Next.js, Payload CMS  
-- **MLOps & Infra:** Docker, Kubernetes, GitHub Actions, Prometheus, Grafana  
-- **ML/DL:** TensorFlow, PyTorch, scikit-learn  
-- **Visualization:** Tableau, Matplotlib, Seaborn  
-- **Cloud & DevOps:** AWS, Azure, GCP, CI/CD pipelines  
+### 🎨 Deep Learning Image Colorization
+*Bachelor's Final Year Project*
 
----
-
-## 💼 Services I Provide
-
-- **IT & Cloud Consulting:** AI/ML infrastructure, SRE, cloud architecture, DevOps workflows  
-- **Application Development:** Backend and full-stack solutions, APIs, cloud-native apps  
-- **Career & Technical Coaching:** Mentoring engineers on growth, best practices, and career progression  
-- **Training:** Workshops on MLOps, DevOps, AI/ML pipelines, and cloud automation  
-
-📩 Contact me for professional engagements or mentoring opportunities.
+- Developed a Color Stack cGAN architecture using TensorFlow and Keras.
+- Combined GAN, CNN, Autoencoder, and U-Net techniques.
+- Presented research findings at an academic symposium.
 
 ---
 
-## 🤝 Volunteering
+## 🛠 Technical Skills
 
-I’m open to volunteering for initiatives in:  
-- **Education & Mentoring** — teaching coding, AI/ML, cloud skills  
-- **Science & Technology Projects** — contributing to community-driven tech solutions  
-- **Sustainability & Social Impact** — supporting eco-tech and tech-for-good initiatives  
+### Platform & Infrastructure
+- OpenShift
+- Kubernetes
+- Docker
+- Helm
+- Windows Server
+- RHEL
+- AWS
+
+### CI/CD & Automation
+- Azure DevOps
+- GitHub Actions
+- Jenkins
+- Argo CD
+- Terraform
+
+### Observability
+- ELK Stack
+- Kibana
+- Prometheus
+- Grafana
+- Matomo
+
+### Software Engineering
+- Python
+- PowerShell
+- Bash
+- REST APIs
+- Neo4j
+- Retrieval-Augmented Generation (RAG)
+
+### Security & Governance
+- Authentication
+- RBAC
+- Audit Logging
+- Security Patching
+- License Management
+- Single Sign-On (SSO)
+
+---
+
+## 🏆 Certifications & Recognition
+
+- Docker Certified Associate (2023)
+- Intel Outstanding Performance Award
+
+---
+
+## 🎓 Education
+
+**Bachelor of Computer Science (Artificial Intelligence)**
+First Class Honours
+
+Multimedia University, Malaysia
+
+CGPA: 3.82 / 4.00
+
+---
+
+## 🤝 Open To
+
+- Site Reliability Engineering consulting
+- Platform Engineering consulting
+- DevOps and Cloud Architecture advisory
+- AI Infrastructure projects
+- Technical mentoring and coaching
+- Community volunteering and STEM education initiatives
 
 ---
 
 ## 📬 Connect
 
-- [LinkedIn](https://www.linkedin.com/in/tan-shi-sian)  
-- [GitHub](https://github.com/shisian512)  
+- LinkedIn: https://linkedin.com/in/tan-shi-sian
+- GitHub: https://github.com/shisian512
+- Email: shisian001@gmail.com
 
-© 2025 Shi Sian Tan
+---
+
+© 2026 Tan Shi Sian

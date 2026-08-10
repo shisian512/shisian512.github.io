@@ -1,6 +1,8 @@
 ---
 title: "SRE Fundamentals (Part 3): Applying SRE Thinking in Small Teams and Startups"
+excerpt: "SRE Part 3: practical ways small teams and startups can apply SRE principles while balancing speed, cost, and reliability."
 date: 2025-12-25
+author: "Tan Shi Sian"
 categories:
   - Blog
 tags:
@@ -10,10 +12,9 @@ tags:
   - Monitoring
   - Observability
   - SRE
-author: "Tan Shi Sian"
 ---
 
-> Summary: The final part shows how small teams and startups can apply SRE principles effectively, balancing reliability, speed, and cost.
+> Summary: The final part shows how small teams and startups can apply SRE principles while balancing reliability, speed, and cost.
 
 ## Series Overview
 

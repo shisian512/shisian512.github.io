@@ -1,6 +1,8 @@
 ---
 title: "SRE Fundamentals (Part 2): Error Budgets, Alerts, and Incident Response"
+excerpt: "SRE Part 2: how error budgets, SLO-based alerting, and incident response improve release and operational decisions."
 date: 2025-12-25
+author: "Tan Shi Sian"
 categories:
   - Blog
 tags:
@@ -10,10 +12,9 @@ tags:
   - Monitoring
   - Observability
   - SRE
-author: "Tan Shi Sian"
 ---
 
-> Summary: Continuing my SRE series, this post covers error budgets, alerting, and incident response, and how they guide release decisions and operations.
+> Summary: Continuing the SRE series, this post covers error budgets, alerting, and incident response, and how they guide release decisions.
 
 ## Series Overview
 

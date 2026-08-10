@@ -1,110 +1,78 @@
 ---
 permalink: /projects/
 title: "Projects"
+excerpt: "Featured SRE, platform engineering, and AI infrastructure projects by Tan Shi Sian."
 ---
 
-*Selected projects showcasing my work in industry, independent development, and research.*
-
----
-
-# Professional Projects
-
-🔗 GitHub: [shisian512](https://github.com/shisian512)
-
-### University Curriculum Enabling Tool — Intel
-**Role**: Developer (Collaboration)  
-**Duration**: Feb 2025 – Jul 2025  
-**Repo**: [GitHub – University-Curriculum](https://github.com/intel/university-curriculum-enabling-tool)
-
-- Developed lightweight delivery platform with Next.js, FastAPI, and Payload CMS  
-- Designed modular RAG pipeline for dynamic content delivery  
-- Deployed multi-env Docker setup with GitHub Actions  
-- Optimized for Intel XPU devices (edge inference)  
-
-### Enterprise GenAI Platform - Intel OPEA 
-**Role**: Developer (under Tech Lead Direction)  
-**Duration**: Nov 2024 – Jan 2025  
-**Repo**: [GitHub – GenAIExamples](https://github.com/opea-project)
-
-- Optimized containerized GenAI inferencing on Intel iGPU/dGPU  
-- Migrated workflows from `systemd` → Docker Compose  
-- Reduced setup friction, enabling faster adoption across teams  
-- Delivered internal PoC demos to showcase inferencing capabilities  
-
-### Workload Services Framework - Intel WSF
-**Role**: Validation Engineer  
-**Duration**: Jul 2024 – Oct 2025  
-**Repo**: [GitHub – Workload Services Framework](https://github.com/intel/workload-services-framework)
-
-- Supported validation of AI workloads on Intel Xeon platforms  
-- Designed and executed test cases, triaged bugs with JIRA  
-- Helped improve platform stability and coverage of edge cases
+These projects show how I approach reliability, platform delivery, and applied AI engineering.
 
 ---
 
-# Independent & Personal Projects
+# Featured Projects
 
-### End-to-End Regression MLOps Pipeline  
-**Role**: ML Engineer  
-**Duration**: Jul 2025 — Oct 2025  
-**Repo**: [GitHub – mlops](https://github.com/shisian512/mlops)  
-**Tech**: Docker, Kubernetes, Machine Learning, MLflow, Github Actions, Python, FastAPI, RESTful API, scikit-learn, Prometheus, Grafana, Minio, Postgres, DVC, more
+## End-to-End Regression MLOps Pipeline
+**Timeline:** Jul 2025 - Oct 2025  
+**Repo:** [GitHub - shisian512/mlops](https://github.com/shisian512/mlops)
 
-- Full ML lifecycle pipeline for regression tasks: data processing, training, CI/CD, deployment, monitoring.  
-- Experiment tracking with MLflow, model/data versioning with DVC, and automated retraining workflow.  
-- Deployed as containerized services (Docker, Kubernetes); integrated observability (Prometheus / Grafana).  
-- Result: measurable deployment lifecycle improvements and reproducible experiments for production-like testing.
+- Built a complete ML lifecycle pipeline with MLflow, DVC, Docker, Kubernetes, and GitHub Actions.
+- Implemented experiment tracking, model and data versioning, automated retraining, and deployment workflows.
+- Added Prometheus and Grafana monitoring to improve operational visibility and production readiness.
 
-### AI-Powered Password Manager  
-**Repo**: [GitHub](https://github.com/shisian512/password-manager-AI)
-**Tech**: Python, scikit-learn, Cryptography, SQL (hashed + salted storage)
+## University Curriculum Enabling Tool (Intel)
+**Timeline:** Feb 2025 - Jul 2025  
+**Repo:** [GitHub - intel/university-curriculum-enabling-tool](https://github.com/intel/university-curriculum-enabling-tool)
 
-- Integrated AI-based strength evaluation into a desktop password manager  
-- Used XGBoost + TF-IDF to assess and suggest password improvements  
-- Built with Tkinter GUI for user interaction  
+- Co-developed an open-source GenAI education platform with Next.js, FastAPI, and Payload CMS.
+- Designed modular RAG workflows for dynamic and maintainable content delivery.
+- Built repeatable CI/CD and deployment workflows using Docker and GitHub Actions.
 
-### Cost-of-Living ML Dashboard  
-**Repo**: [GitHub](https://github.com/shisian512/malaysia-cost-living-ml-dashboard)
-**Tech**: Python (ETL), Tableau
+## Intel OPEA Platform
+**Timeline:** Nov 2024 - Jan 2025  
+**Repo:** [GitHub - opea-project](https://github.com/opea-project)
 
-- Designed ETL pipeline with data cleaning and feature engineering  
-- Built forecasting models for global cost-of-living trends  
-- Published interactive Tableau dashboard for visualization and insights  
+- Containerized enterprise GenAI inference services for Intel hardware platforms.
+- Migrated deployment workflows from systemd-based orchestration to Docker Compose.
+- Delivered reproducible proof-of-concept environments for enterprise AI use cases.
+
+## Intel Workload Services Framework
+**Timeline:** Jul 2024 - Oct 2025  
+**Repo:** [GitHub - intel/workload-services-framework](https://github.com/intel/workload-services-framework)
+
+- Validated AI and benchmark workloads on Intel Xeon systems.
+- Reproduced software failures, documented defects, and improved validation coverage.
+- Collaborated with engineering teams to improve reliability and platform stability.
+
+## Deep Learning Image Colorization
+**Timeline:** Bachelor's final year project  
+**Tech:** TensorFlow, Keras, cGAN, CNN, Autoencoder, U-Net
+
+- Developed a Colour Stack cGAN architecture for grayscale to color image translation.
+- Combined GAN, CNN, Autoencoder, and U-Net approaches to improve generated output quality.
+- Presented findings at an academic symposium.
 
 ---
 
-# Academic & Research Projects
+# Additional Personal Projects
 
-### Final Year Project – Colorizing Grayscale Images with Deep Learning  
-**Role**: Researcher  
-**Duration**: Oct 2022 – Jul 2023  
-**Tech**: Deep Learning, Keras, Tensorflow, c-GAN, CNN, Auto Encoder, U-Net
+## AI-Powered Password Manager
+**Repo:** [GitHub - shisian512/password-manager-AI](https://github.com/shisian512/password-manager-AI)
 
-- Proposed and implemented "Colour Stack cGAN" architecture  
-- Trained and evaluated model on paired grayscale ↔ color datasets  
-- Explored applications in image restoration and media colorization  
-- Presented findings at academic symposium 
+- Integrated machine-learning-based password strength evaluation into a desktop manager.
+- Used XGBoost and TF-IDF features to generate actionable password improvement suggestions.
 
-### Bank Building Classification System  
-**Role**: ML Engineer
-**Tech**: ML pipeline, OpenCV, PCA, SVM, scikit-learn, Numpy, Pandas, Seaborn, more
+## Cost-of-Living ML Dashboard
+**Repo:** [GitHub - shisian512/malaysia-cost-living-ml-dashboard](https://github.com/shisian512/malaysia-cost-living-ml-dashboard)
 
-- Led a team to build an image classification system for identifying bank buildings from online images  
-- Applied PCA for dimensionality reduction and trained SVM classifier  
-
-### Pattern Recognition – Multi-Label Classification  
-**Role**: ML Engineer 
-**Tech**: ML pipeline, OpenCV, PCA, SVM, scikit-learn, numpy, pandas, seaborn sns, more
-
-- Preprocessed large facial image dataset  
-- Applied PCA-based dimensionality reduction  
-- Built ML pipelines for gender, emotion, age, and nationality classification  
+- Built ETL and forecasting workflows for cost-of-living trend analysis.
+- Published an interactive Tableau dashboard for visual exploration.
 
 ---
 
 # Notes
 
-- Each entry above links to the most relevant public repo when available. For internal/closed-source work I can provide summaries, architecture diagrams, or code excerpts on request.  
-- If you want compact, CV-style one-line summaries of these projects (for LinkedIn or an emailed portfolio), tell me which items to shorten and I’ll produce a condensed version.
+- For internal or closed-source projects, I can share architecture summaries and implementation walkthroughs on request.
+- More technical writeups are available in the [Posts](https://shisian512.github.io/posts/) section.
 
-*Last updated: Dec 2025*
+If you want to discuss implementation details on any project, feel free to reach out.
+
+*Last updated: Aug 2026*

@@ -1,14 +1,15 @@
 ---
 title: "A Year of Transformative Impact: Three Pillars of Growth"
-
+excerpt: "A reflection on three Intel initiatives that shaped my growth in AI infrastructure, platform delivery, and engineering collaboration."
+date: 2025-07-28
+author: "Tan Shi Sian"
 categories:
   - Blog
-  
 tags:
-  - Work Experience
+  - Career
 ---
 
-Over the past 12 months at Intel, I've had the privilege of contributing to three major AI-related initiatives, each significantly shaping my journey through real-world infrastructure, full-stack delivery, and deep technical challenges.
+Over the past 12 months at Intel, I contributed to three AI-focused initiatives that strongly shaped my growth in infrastructure, full-stack delivery, and practical problem-solving.
 
 1️⃣ AI Workload Validation - Intel WSF
 - Engineered inference pipelines utilizing Docker, Kubernetes, and Ansible.
@@ -29,16 +30,16 @@ Over the past 12 months at Intel, I've had the privilege of contributing to thre
 - Contributed significantly to Payload CMS schema design, meticulously defining collections and fields to optimize content management and data structures for educational flows.
 - Proposed and successfully shipped new features to support cutting-edge AI-driven education experiences.
 
-🎓 Professional Growth
+## Professional Growth
 Training: Completed "High Impact Conversation" by Wisdom Woods and "Positive Leadership" by IMMERSIVE.
 Recognition: Served as Event ExCo at Intel Graduates Club, contributing to the team awarded "GAR Team of the Year."
 Volunteering: Participated in the Penang International Science Fair 2024, representing Intel Booth.
 
-🧠 Key Takeaways
+## Key Takeaways
 - Cultivating systems thinking from firmware to inference.
 - Always build with purpose and focus on measurable impact.
 - Understanding that great engineering equals continuous learning, strong ownership, and seamless collaboration.
 
-I’m currently open to new opportunities where I can leverage my expertise in AI infrastructure, LLM deployment, or full-stack AI systems. I’m eager to contribute to innovative projects in the broader AI/ML development space.
+I am currently open to new opportunities where I can apply my experience in AI infrastructure, LLM deployment, and full-stack AI systems.
 
 Disclaimer: This is my personal summary and does not reflect Intel’s official position.

@@ -1,25 +1,58 @@
 # Site settings
-title: "Shi Sian Tan — Machine Learning & SRE Engineer"
+title: "Tan Shi Sian | Site Reliability Engineer & Platform Engineer"
+
 email: shisian001@gmail.com
+
 description: >-
-  Portfolio of Shi Sian Tan, building scalable AI/ML and cloud-native systems, offering consulting, mentoring, and volunteer services.
-github_username: shisian512
-minimal_mistakes_skin: dark
-search: true
+  Site Reliability Engineer specializing in OpenShift, Kubernetes,
+  observability, DevOps automation, cloud-native platforms, and AI infrastructure.
+  Portfolio showcasing enterprise production systems, platform operations,
+  automation, and AI-enabled applications.
+
 url: "https://shisian512.github.io"
 baseurl: ""
+
+github_username: shisian512
+
+minimal_mistakes_skin: dark
+search: true
+locale: "en-US"
+timezone: Asia/Kuala_Lumpur
+
 analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-J4PMZN0ESC"
 
+# SEO
+keywords:
+  - Site Reliability Engineer
+  - Platform Engineer
+  - SRE
+  - Kubernetes
+  - OpenShift
+  - DevOps
+  - Azure DevOps
+  - Observability
+  - Cloud Engineering
+  - AI Infrastructure
+  - MLOps
+
+social:
+  type: Person
+  name: Tan Shi Sian
+  links:
+    - https://github.com/shisian512
+    - https://www.linkedin.com/in/tan-shi-sian
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+
 permalink: /:categories/:title/
+
 paginate: 5
 paginate_path: /page:num/
-timezone: Asia/Kuala_Lumpur
 
 include:
   - _pages
@@ -34,34 +67,47 @@ plugins:
   - jekyll-seo-tag
 
 author:
-  name: "Shi Sian Tan (Nick)"
+  name: "Tan Shi Sian"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Building intelligent systems with reliability, scalability, and automation in mind."
+  bio: "Site Reliability Engineer focused on OpenShift, Kubernetes, observability, DevOps automation, and AI infrastructure."
+
   links:
-    - label: "About / Services"
-      icon: "fas fa-fw fa-link"
-      url: "https://shisian512.github.io/about"
+    - label: "Portfolio"
+      icon: "fas fa-fw fa-globe"
+      url: "https://shisian512.github.io"
+
+    - label: "Projects"
+      icon: "fas fa-fw fa-folder-open"
+      url: "https://shisian512.github.io/projects/"
+
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/shisian512"
+
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/tan-shi-sian"
+
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:shisian001@gmail.com"
 
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/shisian512"
+
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/tan-shi-sian"
-    - label: "Contact / Services"
+
+    - label: "Email"
       icon: "fas fa-fw fa-envelope"
-      url: "https://shisian512.github.io/about"
+      url: "mailto:shisian001@gmail.com"
 
 defaults:
-  # _posts
+  # Posts
   - scope:
       path: ""
       type: posts
@@ -72,7 +118,8 @@ defaults:
       comments: true
       share: true
       related: true
-  # _pages
+
+  # Pages
   - scope:
       path: "_pages"
       type: pages
@@ -83,9 +130,10 @@ defaults:
 category_archive:
   type: liquid
   path: /categories/
+
 tag_archive:
   type: liquid
   path: /tags/
 
-# Optional social preview image
+# Social preview image
 social_image: "/assets/images/portfolio-preview.png"

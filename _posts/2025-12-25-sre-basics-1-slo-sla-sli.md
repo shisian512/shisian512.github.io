@@ -1,5 +1,8 @@
 ---
 title: "SRE Fundamentals (Part 1): Understanding SLIs, SLOs, and SLAs"
+excerpt: "SRE Part 1: practical guidance on SLIs, SLOs, and SLAs with examples, trade-offs, and implementation basics."
+date: 2025-12-25
+author: "Tan Shi Sian"
 categories:
   - Blog
 tags:
@@ -11,7 +14,7 @@ tags:
   - SRE
 ---
 
-> Summary: I’m learning SRE fundamentals from Google and sharing what I’ve learned about SLIs, SLOs, and SLAs, with practical examples for real systems.
+> Summary: I am learning SRE fundamentals from Google and sharing practical lessons on SLIs, SLOs, and SLAs.
 
 ## Series Overview
 

@@ -1,12 +1,13 @@
 ---
-title: "From the options, From Roadmap to Reality: A Look at My MLOps Project's Key Learnings"
-
+title: "From Roadmap to Reality: Key Learnings from My MLOps Project"
+excerpt: "A practical reflection on building an end-to-end MLOps pipeline and why local-first integration with Docker Compose mattered."
+date: 2025-08-14
+author: "Tan Shi Sian"
 categories:
   - Blog
-  
 tags:
   - MLOps
-  - Machine Learning
+  - ML
   - MLflow
   - FastAPI
   - DevOps
@@ -14,15 +15,15 @@ tags:
   - CI/CD
 ---
 
-# Building an MLOps Pipeline: A Step-by-Step Adventure 🚀
+# Building an MLOps Pipeline: A Practical Reflection
 
-Been on a cool adventure building my own end-to-end MLOps pipeline for making predictions! It's like creating a step-by-step recipe for training and using machine learning models. 🧑‍🍳
+I have been building an end-to-end MLOps pipeline for regression tasks, and this phase has taught me a lot about systems thinking beyond model training.
 
-One big thing I learned is that you can't build a house without a strong base. 🏠 So, I decided to really focus on getting everything working smoothly on my own computer using **Docker Compose** first. This helps me make sure all the key parts – like the system that tells the pipeline what to do (**Airflow** ⚙️), the tool that keeps track of my experiments (**MLflow** 📊), and the way to actually use the trained model (**FastAPI** 🚀) – work well together. Think of it as making sure all the ingredients taste good before you serve the dish to everyone! 🍽️
+One major lesson was to focus on local integration first. I used **Docker Compose** to validate how core components behaved together before scaling further. This included orchestration with **Airflow**, experiment tracking in **MLflow**, and model serving through **FastAPI**.
 
-While the project is still getting there (still working on some parts like automatic retraining and keeping an eye on data changes), it's becoming a solid way to see how all these pieces fit together in the real world. 🧩
+The project is still in progress, especially around automated retraining and drift monitoring, but it already provides a realistic view of how MLOps components interact in production-like workflows.
 
-I'd love to hear your thoughts and get your ideas as I keep building this. Feel free to check it out and even contribute if you're interested! 🙏
+I am sharing this openly to document the process, learn faster, and invite feedback from others building similar systems.
 
 Check out the project here: [https://github.com/shisian512/mlops](https://github.com/shisian512/mlops)
 

@@ -1,45 +1,45 @@
 ---
 permalink: /contact/
 title: "Contact"
+excerpt: "Get in touch with Tan Shi Sian for SRE, platform engineering, DevOps, and AI infrastructure collaborations."
 ---
 
-I welcome professional connections, collaborations, and opportunities in **AI, MLOps, SRE, and software engineering**. I am also available for freelance and consulting services in IT, cloud, and AI/ML systems, as well as volunteer projects aligned with my expertise.
+I welcome collaborations, consulting engagements, and professional opportunities in Site Reliability Engineering, platform engineering, DevOps automation, and AI infrastructure.
 
-## Hire or Collaborate
+## Ways I Can Help
 
-I provide tailored services including:
+I can support you across:
 
-- **IT & Cloud Consulting** — Architecture guidance, SRE advisories, migration planning  
-- **MLOps & Deployment** — Pipeline design, model lifecycle automation, containerized solutions  
-- **Application & Backend Development** — Scalable APIs and data pipelines  
-- **Coaching & Training** — Technical mentoring, workshops, and skills development
+- **Platform and Reliability Engineering:** Architecture reviews, SRE advisory, operational readiness
+- **DevOps and CI/CD:** Delivery pipelines, automation workflows, release process improvements
+- **AI Infrastructure and MLOps:** Containerized model delivery, deployment patterns, observability integration
+- **Technical Mentoring:** Practical coaching for engineers and teams adopting modern platform practices
 
-**Pricing & Enquiries:** Contact me to discuss project scope and rates.
+## Open To
 
-## Connect with Me
+- Site Reliability Engineering consulting
+- Platform engineering consulting
+- DevOps and cloud architecture advisory
+- AI infrastructure project collaboration
+- Technical mentoring and STEM community contributions
 
-- GitHub: [@shisian512](https://github.com/shisian512)  
-- LinkedIn: [Tan Shi Sian](https://www.linkedin.com/in/tan-shi-sian)  
-- Email: [shisian001@gmail.com](mailto:shisian001@gmail.com)  
+## Connect
+
+- Portfolio: [shisian512.github.io](https://shisian512.github.io)
+- Projects: [shisian512.github.io/projects](https://shisian512.github.io/projects/)
+- GitHub: [@shisian512](https://github.com/shisian512)
+- LinkedIn: [Tan Shi Sian](https://www.linkedin.com/in/tan-shi-sian)
+- Email: [shisian001@gmail.com](mailto:shisian001@gmail.com)
 
 ## Expertise Highlights
 
-- **AI/ML Engineering:** Predictive models, LLM applications, computer vision (YOLO, GANs), NLP pipelines  
-- **MLOps & Deployment:** CI/CD pipelines, MLflow, Docker/Kubernetes, AWS & Azure deployments  
-- **Backend Systems:** FastAPI, Flask, PostgreSQL/MySQL, scalable architectures  
-- **Observability & SRE:** Prometheus, Grafana, logging, performance optimization
+- **Platform and Infrastructure:** OpenShift, Kubernetes, Docker, Helm, Windows Server, RHEL
+- **Automation and Delivery:** Azure DevOps, GitHub Actions, Jenkins, Argo CD, Terraform
+- **Observability:** ELK Stack, Kibana, Prometheus, Grafana
+- **Software Engineering:** Python, PowerShell, Bash, REST APIs, RAG-enabled systems
 
 ## Volunteer Interests
 
-I’m open to supporting initiatives in: Science & Technology, Education, Environmental Sustainability, Diversity, Equity, and Inclusion.
+I am open to supporting initiatives in Science and Technology, Education, Environmental Sustainability, and Diversity, Equity, and Inclusion.
 
-## Personal Interests
-
-Outside of professional work, I enjoy activities that foster creativity and problem-solving:
-
-- Building with Lego  
-- Designing in Minecraft  
-- Exploring Android customization and open-source projects  
-- Gaming and design experiments as a way to recharge and think differently
-
-Reach out to discuss collaborations, freelance services, or volunteer opportunities.
+If you have a project or collaboration in mind, I would love to hear from you.

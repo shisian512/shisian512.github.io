@@ -1,12 +1,13 @@
 ---
 title: "Building a Production-Ready MLOps Pipeline: From Data to Deployment"
-
+excerpt: "How I built an end-to-end MLOps pipeline for regression, covering data versioning, deployment, monitoring, and CI/CD."
+date: 2025-07-30
+author: "Tan Shi Sian"
 categories:
   - Blog
-  
 tags:
   - MLOps
-  - Machine Learning
+  - ML
   - MLflow
   - FastAPI
   - DevOps
@@ -14,13 +15,13 @@ tags:
   - CI/CD
 ---
 
-Over the past few weeks, I've been building a full-stack, production-oriented MLOps pipeline tailored for regression tasks. This is not just an academic exercise — my goal is to design and implement an end-to-end system that mirrors what real-world ML deployments demand: modularity, automation, reproducibility, and observability.
+Over the past few weeks, I have been building a production-oriented MLOps pipeline for regression tasks. My goal is to implement an end-to-end system that reflects real deployment needs: modularity, automation, reproducibility, and observability.
 
-While the project is still a work in progress, it's becoming a valuable learning ground and a personal benchmark in my MLOps journey.
+The project is still evolving, but it has become a strong learning benchmark in my MLOps journey.
 
 ---
 
-## 🔧 What Does the Pipeline Include?
+## What Does the Pipeline Include?
 
 The system covers the full lifecycle of an ML project — from data ingestion to deployment, with CI/CD and monitoring in place:
 
@@ -34,7 +35,7 @@ The system covers the full lifecycle of an ML project — from data ingestion to
 
 ---
 
-## 💡 Why I’m Building This
+## Why I Built This
 
 There are three key motivations behind this project:
 
@@ -46,20 +47,20 @@ This project represents a milestone in my transition from model-centric developm
 
 ---
 
-## 📸 Architecture Snapshot
+## Architecture Snapshot
 
 Here’s a high-level view of the current system (auto-generated and evolving):
 ![MLOps Architecture Diagram](https://raw.githubusercontent.com/shisian512/mlops/main/diagram/mlops_e2e_pipeline.png)
 
-> I use visual system diagrams to better understand component relationships and to track system evolution over time. It's an essential step in my workflow.
+> I use architecture diagrams to understand component relationships and track system evolution over time.
 
 ---
 
-## 🛠️ It's Not About Perfection — It's About Progress
+## Progress Over Perfection
 
 This project is intentionally public, imperfect, and iterative.
 
-I'm documenting every step — the thinking behind design choices, integration pain points, and technical breakdowns — both as a reference for myself and to help others walking the same path.
+I document each step, including design choices, integration pain points, and technical trade-offs, both as a personal reference and to help others on a similar path.
 
 Feel free to:
 - Ask questions
@@ -68,7 +69,7 @@ Feel free to:
 
 ---
 
-## 🔗 Project Links
+## Project Links
 
 GitHub: [shisian512/mlops](https://github.com/shisian512/mlops)
 Project Focus: End-to-end regression pipeline with production-level MLOps features
@@ -76,16 +77,16 @@ Upcoming Work: CI/CD extensions, real-time drift alerts, cloud deployment module
 
 ---
 
-## 💬 Let’s Connect
+## Let's Connect
 
 Are you building MLOps pipelines, deploying ML systems, or navigating similar challenges in production ML?
 
-I’d love to exchange ideas, hear about your experience, and learn from each other.
+I would love to exchange ideas and learn from your experience.
 
-* 💼 [Connect with me on LinkedIn](https://www.linkedin.com/in/tan-shi-sian) — I regularly share updates, resources, and lessons from my projects.
-* 📬 Prefer email? Reach me at **[shisian001@gmail.com](mailto:shisian001@gmail.com)** — always open to thoughtful conversations and collaboration.
-* ⭐️ [Check out the project on GitHub](https://github.com/shisian512/mlops) — feel free to star, fork, or open an issue if you have feedback or ideas.
+* [Connect with me on LinkedIn](https://www.linkedin.com/in/tan-shi-sian) for project updates and lessons learned.
+* Reach me at **[shisian001@gmail.com](mailto:shisian001@gmail.com)** for collaboration or technical discussion.
+* [Check out the project on GitHub](https://github.com/shisian512/mlops) and feel free to share feedback.
 
-> Whether you're just getting started with MLOps or already deploying at scale — I'm always up for learning together.
+> Whether you are just starting with MLOps or already deploying at scale, I am always open to learning together.
 
 ---
