@@ -10,6 +10,13 @@ These projects show how I approach reliability, platform delivery, and applied A
 
 # Featured Projects
 
+## Mini AI Factory — ML + RAG Delivery Showcase
+**Repo:** [GitHub - shisian512/mini-ai-factory](https://github.com/shisian512/mini-ai-factory)
+
+- Built a browser demo for Iris model training and prediction, with class probabilities, plus a retrieval-only RAG workflow that returns cited source excerpts.
+- Implemented FastAPI services, Docker images, Helm charts, and CI validation for model and retrieval workflows.
+- Configured SHA-tagged Argo CD GitOps releases; live Argo CD synchronization has not been verified.
+
 ## End-to-End Regression MLOps Pipeline
 **Timeline:** Jul 2025 - Oct 2025  
 **Repo:** [GitHub - shisian512/mlops](https://github.com/shisian512/mlops)
@@ -75,4 +82,4 @@ These projects show how I approach reliability, platform delivery, and applied A
 
 If you want to discuss implementation details on any project, feel free to reach out.
 
-*Last updated: Aug 2026*
+*Last updated: Oct 2026*
