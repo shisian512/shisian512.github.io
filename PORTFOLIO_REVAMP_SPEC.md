@@ -14,7 +14,7 @@ Replace the current Jekyll/minimal-mistakes portfolio with a modern React + Tail
 - **Hosting:** GitHub Pages (free, no paid services)
 - **Content scope:** Portfolio-only (no blog - existing posts dropped)
 - **Repo must stay public** for free GitHub Pages
-- **Career positioning:** Subtly position Tan as an outstanding candidate for Senior DevOps Engineer roles. The site indirectly shows rapid career growth: Intel trainee (1 year) directly to Infineon Senior SRE, now targeting Senior DevOps Engineer.
+- **Career positioning:** Subtly position Tan as a candidate for Senior DevOps Engineer roles. The site shows the path from Intel graduate trainee, through self-directed MLOps and AI projects, to an SRE role at Infineon in November 2025.
 
 ---
 
@@ -49,9 +49,9 @@ Three goals:
 ### Career Positioning (indirect, not boastful)
 
 The site subtly communicates:
-- Rapid career progression: trainee to senior SRE in about one year
+- Career progression: graduate trainee, self-directed project work, and SRE
 - Enterprise-scale impact: 50+ servers, global production platforms
-- Senior-level responsibility from day one at Infineon: productionization, RBAC, audit logging, multi-environment deployment
+- Production responsibility from the start at Infineon: productionization, RBAC, audit logging, multi-environment deployment
 - Breadth: platform ops, CI/CD, observability, AI infrastructure, MLOps
 - Ready for next step: Senior DevOps Engineer
 
@@ -114,7 +114,7 @@ A futuristic terminal that auto-types as if an AI agent is analyzing the candida
 > KEY FINDINGS:
 > - Productionized AI platform on OpenShift
 > - Manages 50+ servers globally
-> - 1 year from trainee to senior SRE
+> - Progressed from trainee to SRE in 16 months
 > - Docker Certified Associate
 >
 > STATUS: Open to Senior DevOps Engineer roles
@@ -145,7 +145,7 @@ A futuristic terminal that auto-types as if an AI agent is analyzing the candida
 - Animated stat counters that count up on scroll:
   - 50+ servers and VMs managed globally
   - 67% KPI reduction (45 min to 15 min)
-  - 1 year from trainee to senior SRE
+  - 16 months from graduate trainee to SRE
   - First Class Honours, CGPA 3.82
 - "What I Work On" badges with hover effects:
   - Site Reliability Engineering
@@ -157,16 +157,16 @@ A futuristic terminal that auto-types as if an AI agent is analyzing the candida
 ### Section 3: Career Trajectory
 - A visual career arc showing the upward path:
   - Intel Graduate Trainee (Jul 2024)
-  - Personal Projects and MLOps Pipeline (Jul-Oct 2025)
-  - Infineon Senior SRE (Nov 2025)
+  - Self-learning projects and MLOps pipeline (Jul-Oct 2025)
+  - Infineon SRE (Nov 2025)
   - Next: Senior DevOps Engineer (target)
 - Animated progression line that fills as you scroll
 - Each node shows role, company, and one key achievement
 - Subtle, not boastful - the facts speak for themselves
 
 ### Section 4: Experience Timeline
-- Interactive vertical timeline with career milestones
-- Click each milestone to expand details (company, role, dates, achievements)
+- Animated vertical timeline with career milestones
+- Automatically expand the role nearest the viewport focus as the visitor scrolls; keep click-to-toggle available
 - Animated progress line that fills as you scroll
 - Three main entries:
   1. Infineon Technologies - SRE (Nov 2025 - Present)
@@ -174,17 +174,17 @@ A futuristic terminal that auto-types as if an AI agent is analyzing the candida
   3. Infineon Technologies - BI Intern (May 2022 - Jul 2022)
 
 ### Section 5: Skills
-- Interactive skill grid or constellation
+- Animated capability cards with icons, category colors, and short descriptions
 - Categories: Platform and Infrastructure, CI/CD and Automation, Observability, Software Engineering, Security and Governance
-- Hover or tap a skill to see a tooltip with context
-- Skill connection lines showing how skills relate to projects
+- Link every technology chip to its official documentation
+- Add a delivery roadmap from source control through deployment and operations, with a flowing progress animation
 
 ### Section 6: Projects
-- Flip cards or expandable cards
-- Front: project name, short description, tech badges
-- Back or expanded: detailed description, links, timeline
+- Illustrated, animated flip cards
+- Front: project artwork, category, timeline, short description, and technology badges
+- Back: project field notes, technology stack, and public project links or private-project note
 - Filterable by category (SRE/Platform, AI/ML, Personal)
-- Private repos marked with "(PRIVATE repo)" badge - no link, just a note
+- Private projects are clearly marked and do not expose repository links
 - All 8 projects included:
   1. Mini AI Factory (PRIVATE repo)
   2. End-to-End Regression MLOps Pipeline (PRIVATE repo)
@@ -196,9 +196,8 @@ A futuristic terminal that auto-types as if an AI agent is analyzing the candida
   8. Cost-of-Living ML Dashboard (PRIVATE repo)
 
 ### Section 7: Education and Certifications
-- Compact card layout
-- Degree, university, CGPA, academic focus
-- Certification badges (Docker Certified Associate, Intel Outstanding Performance Award)
+- Animated degree feature card with university, dates, academic result, and focus areas
+- Dedicated certification and recognition cards (Docker Certified Associate, Intel Outstanding Performance Award)
 
 ### Section 8: Contact
 - Social links (GitHub, LinkedIn, Email)
@@ -213,9 +212,9 @@ A futuristic terminal that auto-types as if an AI agent is analyzing the candida
 | # | Feature | Description | Complexity |
 |---|---|---|---|
 | 1 | Fake AI Agent Terminal | Auto-typing futuristic hero. AI agent "analyzes" the candidate. SRE command easter eggs after intro. | Medium |
-| 2 | Interactive Timeline | Clickable career milestones that expand with smooth animations. Scroll progress line. | Medium |
-| 3 | Flip Project Cards | 3D flip cards - front shows summary, back shows details and links. Tap to flip on mobile. | Medium |
-| 4 | Skill Constellation | Skills as a network graph. Hover a skill to highlight related projects and context. | High |
+| 2 | Interactive Timeline | Career details auto-expand as each milestone enters view; retain click-to-toggle. | Medium |
+| 3 | Flip Project Cards | Animated, illustrated 3D cards - front shows summary, back shows project notes and links. | Medium |
+| 4 | Skills Roadmap | Color-coded capability groups with official documentation links and an animated delivery loop. | High |
 | 5 | Animated Counters | Key stats count up when scrolled into view (50+ servers, 67% KPI, etc.) | Low |
 | 6 | Pipeline Visualization | Animated CI/CD pipeline as a decorative or interactive background element. | High |
 | 7 | Theme Toggle | Dark/light mode switch with smooth transition. Preference saved to localStorage. | Low |

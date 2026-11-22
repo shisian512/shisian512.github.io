@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, AnimatePresence, useInView, useScroll } from 'framer-motion'
 import {
-  ArrowDown, ArrowUpRight, BriefcaseBusiness, Check, ChevronDown, Copy,
-  Github, Linkedin, Mail, Moon, Phone, RotateCcw, Sun, Terminal,
+  Activity, ArrowDown, ArrowUpRight, Award, BookOpen, Boxes, BrainCircuit,
+  BriefcaseBusiness, Check, ChevronDown, Cloud, Code2, Copy, Cpu, Database,
+  GitBranch, Github, GraduationCap, Layers3, Linkedin, Mail, Moon,
+  Phone, RotateCcw, Server, ShieldCheck, Sparkles, Sun, Terminal, Workflow,
 } from 'lucide-react'
 
 const navItems = [
@@ -24,7 +26,7 @@ const introLines = [
   '> KEY FINDINGS:',
   '> - Productionized AI platform on OpenShift',
   '> - Manages 50+ servers globally',
-  '> - 1 year from trainee to senior SRE',
+  '> - Progressed from trainee to SRE in 16 months',
   '> - Docker Certified Associate',
   '',
   '> STATUS: Open to Senior DevOps Engineer roles',
@@ -34,7 +36,7 @@ const introLines = [
 const stats = [
   { value: 50, suffix: '+', label: 'servers & VMs managed globally' },
   { value: 67, suffix: '%', label: 'KPI improvement reported' },
-  { value: 1, suffix: ' year', label: 'trainee to senior SRE' },
+  { value: 16, suffix: ' months', label: 'from graduate trainee to SRE' },
   { value: 3.82, suffix: '/4.00', label: 'CGPA · First Class Honours', decimals: 2 },
 ]
 
@@ -80,28 +82,78 @@ const skillGroups = [
   {
     title: 'Platform & Infrastructure',
     color: 'blue',
+    icon: Server,
+    summary: 'Run reliable workloads across containers, clusters, operating systems, and cloud.',
     skills: ['OpenShift', 'Kubernetes', 'Docker', 'Helm', 'Windows Server', 'RHEL', 'AWS'],
   },
   {
     title: 'CI/CD & Automation',
     color: 'coral',
+    icon: GitBranch,
+    summary: 'Connect source control, repeatable builds, release automation, and infrastructure.',
     skills: ['Azure DevOps', 'GitHub Actions', 'Jenkins', 'Argo CD', 'Terraform'],
   },
   {
     title: 'Observability',
     color: 'mint',
+    icon: Activity,
+    summary: 'Use logs, metrics, and analytics to understand systems and investigate issues.',
     skills: ['ELK Stack', 'Kibana', 'Prometheus', 'Grafana', 'Matomo'],
   },
   {
     title: 'Software Engineering',
     color: 'blue',
+    icon: Code2,
+    summary: 'Build practical tools, integrations, and data-enabled application workflows.',
     skills: ['Python', 'PowerShell', 'Bash', 'REST APIs', 'Neo4j', 'RAG'],
   },
   {
     title: 'Security & Governance',
     color: 'coral',
+    icon: ShieldCheck,
+    summary: 'Apply identity, access control, auditability, and operational safeguards.',
     skills: ['Authentication', 'RBAC', 'Audit logging', 'Security patching', 'SSO', 'License management'],
   },
+]
+
+const skillDocs = {
+  OpenShift: 'https://docs.openshift.com/',
+  Kubernetes: 'https://kubernetes.io/docs/',
+  Docker: 'https://docs.docker.com/',
+  Helm: 'https://helm.sh/docs/',
+  'Windows Server': 'https://learn.microsoft.com/windows-server/',
+  RHEL: 'https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/',
+  AWS: 'https://docs.aws.amazon.com/',
+  'Azure DevOps': 'https://learn.microsoft.com/azure/devops/',
+  'GitHub Actions': 'https://docs.github.com/actions',
+  Jenkins: 'https://www.jenkins.io/doc/',
+  'Argo CD': 'https://argo-cd.readthedocs.io/en/stable/',
+  Terraform: 'https://developer.hashicorp.com/terraform/docs',
+  'ELK Stack': 'https://www.elastic.co/guide/index.html',
+  Kibana: 'https://www.elastic.co/guide/en/kibana/current/index.html',
+  Prometheus: 'https://prometheus.io/docs/introduction/overview/',
+  Grafana: 'https://grafana.com/docs/grafana/latest/',
+  Matomo: 'https://matomo.org/guide/',
+  Python: 'https://docs.python.org/3/',
+  PowerShell: 'https://learn.microsoft.com/powershell/',
+  Bash: 'https://www.gnu.org/software/bash/manual/',
+  'REST APIs': 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/REST',
+  Neo4j: 'https://neo4j.com/docs/',
+  RAG: 'https://learn.microsoft.com/azure/search/retrieval-augmented-generation-overview',
+  Authentication: 'https://openid.net/specs/openid-connect-core-1_0.html',
+  RBAC: 'https://kubernetes.io/docs/reference/access-authn-authz/rbac/',
+  'Audit logging': 'https://docs.openshift.com/container-platform/latest/security/audit-log-policy-config.html',
+  'Security patching': 'https://access.redhat.com/security/security-updates/',
+  SSO: 'https://openid.net/specs/openid-connect-core-1_0.html',
+  'License management': 'https://learn.microsoft.com/licensing/',
+}
+
+const pipelineStages = [
+  { title: 'Source', label: 'Version control', icon: GitBranch, tone: 'blue' },
+  { title: 'Build', label: 'Package & build', icon: Boxes, tone: 'violet' },
+  { title: 'Verify', label: 'Test & scan', icon: ShieldCheck, tone: 'coral' },
+  { title: 'Deploy', label: 'Release safely', icon: Cloud, tone: 'blue' },
+  { title: 'Operate', label: 'Observe & improve', icon: Activity, tone: 'mint' },
 ]
 
 const projects = [
@@ -262,16 +314,48 @@ function CopyButton({ value, label }) {
 function App() {
   const [theme, setTheme] = useTheme()
   const [menuOpen, setMenuOpen] = useState(false)
-  const [openExperience, setOpenExperience] = useState(0)
+  const [openExperience, setOpenExperience] = useState(null)
   const [projectFilter, setProjectFilter] = useState('All')
   const [flipped, setFlipped] = useState(null)
-  const [activeSkill, setActiveSkill] = useState(null)
   const { scrollYProgress } = useScroll()
+  const timelineRef = useRef(null)
 
   useEffect(() => {
     const closeMenu = () => setMenuOpen(false)
-    window.addEventListener('resize', closeMenu)
-    return () => window.removeEventListener('resize', closeMenu)
+    let scrollFrame
+    const updateTimelineFocus = () => {
+      if (scrollFrame) cancelAnimationFrame(scrollFrame)
+      scrollFrame = requestAnimationFrame(() => {
+        const timeline = timelineRef.current
+        if (!timeline) return
+        const viewportCenter = window.innerHeight * 0.52
+        const timelineBounds = timeline.getBoundingClientRect()
+        if (viewportCenter < timelineBounds.top || viewportCenter > timelineBounds.bottom) return
+
+        const items = Array.from(timeline.querySelectorAll('.timeline-item'))
+        const nearestIndex = items.reduce((nearest, item, index) => {
+          const trigger = item.querySelector('.timeline-trigger')
+          if (!trigger) return nearest
+          const bounds = trigger.getBoundingClientRect()
+          const distance = Math.abs(bounds.top + bounds.height / 2 - viewportCenter)
+          return distance < nearest.distance ? { index, distance } : nearest
+        }, { index: 0, distance: Infinity }).index
+        setOpenExperience((current) => current === nearestIndex ? current : nearestIndex)
+      })
+    }
+    const handleResize = () => {
+      closeMenu()
+      updateTimelineFocus()
+    }
+
+    window.addEventListener('resize', handleResize)
+    window.addEventListener('scroll', updateTimelineFocus, { passive: true })
+    updateTimelineFocus()
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      window.removeEventListener('scroll', updateTimelineFocus)
+      if (scrollFrame) cancelAnimationFrame(scrollFrame)
+    }
   }, [])
 
   const filteredProjects = projectFilter === 'All'
@@ -358,8 +442,8 @@ function App() {
           <div className="trajectory">
             {[
               ['Jul 2024', 'Intel Graduate Trainee', 'Started in enterprise AI and platform engineering'],
-              ['Jul 2025', 'MLOps & AI Projects', 'Built repeatable source-to-deployment pipelines'],
-              ['Nov 2025', 'Infineon Senior SRE', 'Owning production AI platforms across 50+ systems'],
+              ['Jul 2025', 'Self-Learning Projects', 'Built personal MLOps and AI projects to deepen hands-on skills'],
+              ['Nov 2025', 'Infineon SRE', 'Joined as an SRE, supporting production AI platforms across 50+ systems'],
               ['Next', 'Senior DevOps Engineer', 'Targeting the next level of platform leadership'],
             ].map(([date, role, detail], index) => (
               <motion.div
@@ -380,16 +464,21 @@ function App() {
         </Section>
 
         <Section id="experience" eyebrow="03 / EXPERIENCE" title="Built through real production environments">
-          <div className="timeline">
+          <div className="timeline" ref={timelineRef}>
             {experience.map((item, index) => (
               <motion.article
                 className={openExperience === index ? 'timeline-item open' : 'timeline-item'}
                 key={item.company + item.role}
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.3 }}
               >
-                <button className="timeline-trigger" onClick={() => setOpenExperience(openExperience === index ? null : index)}>
+                <button
+                  className="timeline-trigger"
+                  aria-expanded={openExperience === index}
+                  aria-controls={`experience-details-${index}`}
+                  onClick={() => setOpenExperience(openExperience === index ? null : index)}
+                >
                   <span className="timeline-marker"><BriefcaseBusiness size={17} /></span>
                   <span className="timeline-heading">
                     <small>{item.date} · {item.place}</small>
@@ -402,6 +491,7 @@ function App() {
                   {openExperience === index && (
                     <motion.div
                       className="timeline-content"
+                      id={`experience-details-${index}`}
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
@@ -418,41 +508,94 @@ function App() {
         </Section>
 
         <Section id="skills" eyebrow="04 / SKILLS" title="A connected platform toolkit">
-          <div className="skills-grid">
-            {skillGroups.map((group) => (
-              <div className={`skill-card ${group.color}`} key={group.title}>
-                <h3>{group.title}</h3>
-                <div className="skill-pills">
-                  {group.skills.map((skill) => (
-                    <button
-                      key={skill}
-                      onClick={() => setActiveSkill(activeSkill === skill ? null : skill)}
-                      onMouseEnter={() => setActiveSkill(skill)}
-                      onMouseLeave={() => setActiveSkill(null)}
-                      className={activeSkill === skill ? 'active' : ''}
-                    >
-                      {skill}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            ))}
+          <div className="skills-guide">
+            <span className="skills-guide-icon"><BookOpen size={17} /></span>
+            <p>Explore the toolkit by capability. Select any technology to open its official documentation.</p>
+            <span className="skills-guide-count">5 capability groups · 29 technologies</span>
           </div>
-          <div className="pipeline" aria-label="CI/CD pipeline visualization">
-            {['Source', 'Build', 'Test', 'Deploy', 'Observe'].map((stage, index) => (
-              <div className="pipeline-stage" key={stage}>
-                <motion.span
-                  initial={{ scale: 0.7 }}
-                  whileInView={{ scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.14 }}
+          <div className="skills-grid">
+            {skillGroups.map((group, index) => {
+              const GroupIcon = group.icon
+              return (
+                <motion.article
+                  className={`skill-card ${group.color}`}
+                  key={group.title}
+                  initial={{ opacity: 0, y: 28 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.55, delay: index * 0.08 }}
                 >
-                  {index === 0 ? 'Git' : index === 1 ? 'CI' : index === 2 ? 'QA' : index === 3 ? 'CD' : 'Ops'}
-                </motion.span>
-                <b>{stage}</b>
-                {index < 4 && <i />}
+                  <div className="skill-card-top">
+                    <span className="skill-icon"><GroupIcon size={21} /></span>
+                    <span className="skill-index">0{index + 1}</span>
+                  </div>
+                  <h3>{group.title}</h3>
+                  <p>{group.summary}</p>
+                  <div className="skill-pills">
+                    {group.skills.map((skill) => (
+                      <a
+                        key={skill}
+                        href={skillDocs[skill]}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`${skill} official documentation (opens in a new tab)`}
+                      >
+                        <span className="skill-dot" />
+                        {skill}
+                        <ArrowUpRight size={12} />
+                      </a>
+                    ))}
+                  </div>
+                </motion.article>
+              )
+            })}
+          </div>
+          <div className="pipeline-panel">
+            <div className="pipeline-heading">
+              <div>
+                <p className="pipeline-kicker">DELIVERY ROADMAP</p>
+                <h3>From commit to continuous improvement</h3>
               </div>
-            ))}
+              <span className="pipeline-live"><i /> Continuous loop</span>
+            </div>
+            <div className="pipeline" aria-label="CI/CD delivery lifecycle">
+              <motion.div
+                className="pipeline-progress"
+                initial={{ scaleX: 0 }}
+                whileInView={{ scaleX: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.5, ease: 'easeOut' }}
+              />
+              {pipelineStages.map((stage, index) => {
+                const StageIcon = stage.icon
+                return (
+                  <motion.div
+                    className={`pipeline-stage ${stage.tone}`}
+                    key={stage.title}
+                    initial={{ opacity: 0, y: 18 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.14, duration: 0.45 }}
+                  >
+                    <motion.span
+                      className="pipeline-node"
+                      initial={{ scale: 0.65, rotate: -12 }}
+                      whileInView={{ scale: 1, rotate: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ type: 'spring', stiffness: 180, damping: 14, delay: index * 0.14 }}
+                    >
+                      <StageIcon size={21} />
+                    </motion.span>
+                    <b>{stage.title}</b>
+                    <small>{stage.label}</small>
+                  </motion.div>
+                )
+              })}
+            </div>
+            <div className="pipeline-footer">
+              <span><Workflow size={15} /> Delivery is a loop, not a finish line.</span>
+              <span>Feedback feeds the next change</span>
+            </div>
           </div>
         </Section>
 
@@ -466,71 +609,163 @@ function App() {
           </div>
           <motion.div layout className="project-grid">
             <AnimatePresence>
-              {filteredProjects.map((project, index) => (
-                <motion.article
-                  layout
-                  initial={{ opacity: 0, scale: 0.96 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.96 }}
-                  className={flipped === index ? 'project-card flipped' : 'project-card'}
-                  key={project.title}
-                  onClick={() => setFlipped(flipped === index ? null : index)}
-                >
-                  <div className="project-card-inner">
-                    <div className="project-face project-front">
-                      <div className="project-number">{String(projects.indexOf(project) + 1).padStart(2, '0')}</div>
-                      <div className="project-category">{project.category}</div>
-                      <h3>{project.title}</h3>
-                      {project.privateRepo && <span className="private-badge">(PRIVATE repo)</span>}
-                      <p>{project.description}</p>
-                      <div className="tech-badges">
-                        {project.tech.map((tech) => <span key={tech}>{tech}</span>)}
+              {filteredProjects.map((project, index) => {
+                const ProjectIcon = project.category === 'AI/ML'
+                  ? BrainCircuit
+                  : project.category === 'Personal' ? Sparkles : Layers3
+                const projectNumber = String(projects.indexOf(project) + 1).padStart(2, '0')
+                return (
+                  <motion.article
+                    layout
+                    initial={{ opacity: 0, y: 24, scale: 0.97 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    viewport={{ once: true, amount: 0.15 }}
+                    exit={{ opacity: 0, scale: 0.96 }}
+                    transition={{ duration: 0.45, delay: (index % 3) * 0.08 }}
+                    className={flipped === project.title ? 'project-card flipped' : 'project-card'}
+                    key={project.title}
+                  >
+                    <div className="project-card-inner">
+                      <div className="project-face project-front">
+                        <div className={`project-art ${project.category === 'AI/ML' ? 'project-art-ai' : project.category === 'Personal' ? 'project-art-personal' : 'project-art-platform'}`}>
+                          <span className="project-art-orbit orbit-one" />
+                          <span className="project-art-orbit orbit-two" />
+                          <span className="project-art-grid" />
+                          <span className="project-art-icon"><ProjectIcon size={28} /></span>
+                          <span className="project-art-number">{projectNumber}</span>
+                        </div>
+                        <div className="project-card-meta">
+                          <span className="project-category">{project.category}</span>
+                          <small>{project.timeline}</small>
+                        </div>
+                        <h3>{project.title}</h3>
+                        <p>{project.description}</p>
+                        <div className="tech-badges">
+                          {project.tech.map((tech) => <span key={tech}>{tech}</span>)}
+                        </div>
+                        <div className="project-card-footer">
+                          {project.privateRepo && <span className="private-badge">Private project</span>}
+                          <button
+                            className="flip-button"
+                            type="button"
+                            aria-label={`View details for ${project.title}`}
+                            onClick={() => setFlipped(project.title)}
+                          >
+                            Explore project <ArrowUpRight size={14} />
+                          </button>
+                        </div>
                       </div>
-                      <button className="flip-button" type="button">View details <RotateCcw size={14} /></button>
+                      <div className="project-face project-back">
+                        <div className="project-back-icon"><ProjectIcon size={20} /></div>
+                        <div className="project-category">PROJECT FIELD NOTES · {projectNumber}</div>
+                        <h3>{project.title}</h3>
+                        <p>{project.description}</p>
+                        <div className="project-back-stack">
+                          <small>TOOLKIT</small>
+                          <div className="tech-badges">
+                            {project.tech.map((tech) => <span key={tech}>{tech}</span>)}
+                          </div>
+                        </div>
+                        {project.privateRepo ? (
+                          <div className="private-note">Private project · Architecture details available on request</div>
+                        ) : (
+                          project.link && (
+                            <a href={project.link} target="_blank" rel="noreferrer">
+                              View open-source project <ArrowUpRight size={16} />
+                            </a>
+                          )
+                        )}
+                        <button
+                          className="flip-button"
+                          type="button"
+                          onClick={() => setFlipped(null)}
+                        >
+                          <RotateCcw size={14} /> Return to overview
+                        </button>
+                      </div>
                     </div>
-                    <div className="project-face project-back">
-                      <div className="project-category">{project.timeline}</div>
-                      <h3>{project.title}</h3>
-                      <p>{project.description}</p>
-                      {project.privateRepo ? (
-                        <div className="private-note">Architecture summaries available on request</div>
-                      ) : (
-                        project.link && (
-                          <a href={project.link} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()}>
-                            View open-source project <ArrowUpRight size={16} />
-                          </a>
-                        )
-                      )}
-                      <button className="flip-button" type="button"><RotateCcw size={14} /> Back</button>
-                    </div>
-                  </div>
-                </motion.article>
-              ))}
+                  </motion.article>
+                )
+              })}
             </AnimatePresence>
           </motion.div>
         </Section>
 
         <Section id="education" eyebrow="06 / EDUCATION & CERTIFICATIONS" title="Strong foundations, continuously upgraded">
           <div className="education-grid">
-            <article className="education-card">
-              <div className="education-mark">MMU</div>
-              <div>
-                <small>2019 - 2023</small>
-                <h3>Bachelor of Computer Science (Artificial Intelligence)</h3>
-                <p>Multimedia University, Malaysia</p>
-                <strong>First Class Honours · CGPA 3.82/4.00</strong>
-                <p>AI, machine learning, deep learning, software engineering, data analytics, and applied research.</p>
+            <motion.article
+              className="education-card"
+              initial={{ opacity: 0, x: -28 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="education-visual" aria-hidden="true">
+                <span className="education-visual-orbit orbit-one" />
+                <span className="education-visual-orbit orbit-two" />
+                <span className="education-mark"><GraduationCap size={34} /></span>
+                <span className="education-monogram">MMU</span>
+                <span className="education-visual-caption">ARTIFICIAL INTELLIGENCE</span>
               </div>
-            </article>
-            <div className="cert-grid">
-              <article>
-                <span className="cert-icon">DCA</span>
-                <div><small>Certification · 2023</small><h3>Docker Certified Associate</h3></div>
-              </article>
-              <article>
-                <span className="cert-icon award">★</span>
-                <div><small>Recognition</small><h3>Intel Outstanding Performance Award</h3></div>
-              </article>
+              <div className="education-card-content">
+                <div className="education-card-meta">
+                  <span>DEGREE · MULTIMEDIA UNIVERSITY</span>
+                  <time>2019 — 2023</time>
+                </div>
+                <h3>Bachelor of Computer Science</h3>
+                <p className="education-major">Artificial Intelligence · Malaysia</p>
+                <div className="education-result">
+                  <div><small>ACADEMIC RESULT</small><strong>First Class Honours</strong></div>
+                  <div className="education-gpa"><b>3.82</b><span>/ 4.00 CGPA</span></div>
+                </div>
+                <div className="education-focus">
+                  {[
+                    ['AI & ML', BrainCircuit],
+                    ['Deep Learning', Cpu],
+                    ['Software', Code2],
+                    ['Data & Research', Database],
+                  ].map(([label, FocusIcon]) => (
+                    <span key={label}><FocusIcon size={14} />{label}</span>
+                  ))}
+                </div>
+              </div>
+            </motion.article>
+            <div className="credentials">
+              <div className="credentials-heading">
+                <span>BEYOND THE CLASSROOM</span>
+                <p>Certifications & recognition</p>
+              </div>
+              <motion.article
+                className="credential-card docker-credential"
+                  initial={{ opacity: 0, y: 22 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{ duration: 0.55, delay: 0.12 }}
+              >
+                <span className="cert-icon"><Boxes size={25} /></span>
+                <div>
+                  <small>PROFESSIONAL CERTIFICATION · 2023</small>
+                  <h3>Docker Certified Associate</h3>
+                  <p>Container technology and practical operations.</p>
+                </div>
+                <span className="credential-index">01</span>
+              </motion.article>
+              <motion.article
+                className="credential-card award-credential"
+                  initial={{ opacity: 0, y: 22 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{ duration: 0.55, delay: 0.22 }}
+              >
+                <span className="cert-icon award"><Award size={25} /></span>
+                <div>
+                  <small>RECOGNITION · INTEL</small>
+                  <h3>Outstanding Performance Award</h3>
+                  <p>Recognition received during the Intel experience.</p>
+                </div>
+                <span className="credential-index">02</span>
+              </motion.article>
+              <div className="credentials-note"><Sparkles size={15} /> Learning continues through hands-on projects.</div>
             </div>
           </div>
         </Section>
