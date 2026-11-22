@@ -19,4 +19,4 @@ npm run preview
 
 ## Deployment
 
-The repository includes `.github/workflows/deploy.yml`. Pushes to `main` build the Vite app and deploy `dist/` to GitHub Pages.
+Set the repository's GitHub Pages source to **GitHub Actions** in **Settings > Pages > Build and deployment**. The workflow in `.github/workflows/deploy.yml` builds the Vite app and deploys `dist/` when changes are pushed to `master`.
